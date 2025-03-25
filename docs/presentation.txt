@@ -1,0 +1,110 @@
+# Features
+
+## Microscopic Core, Modular Design
+
+Start small and grow as you go. All you need is a GitHub account and Docker to start publishing content.
+Sapphire CMS uses a tiny core that can be progressively enhanced with plug-and-play modules as your project grows.
+
+## Built for the Serverless World
+
+Sapphire CMS is a first-class citizen of the serverless ecosystem.
+Deploy effortlessly to Vercel, Netlify, Cloudflare Workers, Firebase Functions, AWS Lambda, and more.
+
+## Headless & Framework-Agnostic
+
+Use any frontend you want — Next.js, Nuxt, Astro, Svelte, or plain HTML.
+Sapphire CMS delivers content via flexible, decoupled APIs that fit any stack.
+
+## Lightning-Fast Content Delivery
+
+Render and push content directly to CDNs or edge databases.
+Enjoy near-zero latency delivery that feels like content is hardcoded into your app, but with full CMS flexibility.
+
+## Content Shapers for Every Channel
+
+Target different platforms with precision.
+Use content shapers to tailor output for:
+
+- Mobile vs Desktop
+- Social media (e.g. Twitter/X)
+- Newsletters or SEO snippets
+  Resize images, shorten text, plug in AI — shape your content pipeline like a pro.
+
+## Instant Visual Editing
+
+Edit your content live and visually, right from the page.
+Use the Sapphire CMS Chrome or Firefox plugin to fix typos or tweak text directly on your production site.
+
+## Serverless Search Engine
+
+Integrate Sapphire Search — a lightweight, fast, serverless-native search engine built just for Sapphire CMS.
+Enable your users to search content instantly, without relying on bloated third-party search services.
+
+
+Obsidian Founding Partner
+(Exclusive tier: 10 places only)
+Donation: from $10,000
+
+Being Obsidian Founding Partner is more that make a donation. It is to become the founding stone of the future generation of CMS.
+This tier is dedicated to 10 carefully selected companies who early percieved the potential of progressive headless CMSs.
+
+You’ll receive:
+- Lifetime recognition on the homepage + GitHub.
+- Your companies logo in the most visible place, specially dedicted to Founding Partners.
+- First priority in roadmap discussions.
+- All benefits of the Diamond Tier.
+- And of course — our deepest gratitude.
+
+
+Diamond Partner
+Donation: $10,000
+
+Being a Diamond Partner means to be deeply involved with Sapphire CMS. This tier is dedicated to visionarry companies who advance at the same direction and
+those value are aligned with ours.
+
+This tier will provide your company with our highiest attention and opportunity to influence the course of the project.
+
+You’ll receive:
+- Your company’s logo in the prioritary place dedicated for Diamond Partner.
+- Participation in our roadmap and feature definition.
+- Direct contact with the core team and priority technical support.
+- A tailored presentation in the office of your company delivered by the founder of Sapphire CMS.
+
+
+Ruby Partner
+Donation: $5,000
+
+This tier is reserved mostly to users of Sapphire CMS, who wish to have a priority technical support and accellerated issues treatment.
+
+This tier if most appropriate for small or middle size companies those business is havily rely on content production.
+
+You’ll receive:
+- Your company’s logo in the place dedicated for Ruby Partners.
+- Priority technical support.
+
+
+Amethyst Sponsor
+Donation: $1,000
+
+This tier was tailored for Dev Agencies who uses Sapphire CMS to build CMS for themselves or for their clients.
+
+Become Amethyst Sponsor to make a bold statement, that your company value their clients by providing them with a modern, future-proof solution for content distribution.
+
+You’ll receive:
+- Your company’s logo in the place dedicated for Amethyst Sponsors.
+- Occasional mention in our publications done by round robin.
+
+
+Quartz Supporter
+Donation: $500
+
+Quartz Supporter is open to everybody willing to bring their grain of sand to the foundation of the next generation of CMS.
+
+Where where you are a small developer agency or the user of Sapphire CMS, you are welcome in our movement.
+Your contribution is unvaluable for our team, and will allow us to progress farther.
+
+You’ll receive:
+- Your company’s logo displayed in the Supporters section on our website.
+- One thanks announcement on our social media.
+
+

@@ -1,0 +1,24 @@
+.hero.is-main {
+  background: radial-gradient(circle at 90% 90%, rgb(149, 196, 217), transparent 50%),
+              #c8d3d8; /* Fallback background */
+}
+
+.has-image-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.is-fullheight {
+  height: 100%;
+}
+
+h1.is-main,
+h2.is-main,
+h3.is-main,
+h4.is-main,
+h5.is-main,
+h6.is-main {
+  background: -webkit-linear-gradient(120deg, #62e5fb 30%, #0150e3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
