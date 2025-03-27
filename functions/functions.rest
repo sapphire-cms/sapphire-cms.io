@@ -1,0 +1,12 @@
+###
+# Send contact message
+POST http://localhost:5001/sapphire-cms-io/us-central1/contact
+Content-Type: application/json
+
+{
+  "data":  {
+    "email": "alexei.klenin@sapphire-cms.io",
+    "contactName": "Alexei KLENIN",
+    "message": "Sapphire CMS the Best!"
+  }
+}

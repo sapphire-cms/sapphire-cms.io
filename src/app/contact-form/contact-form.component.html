@@ -1,0 +1,89 @@
+<form #formDir="ngForm"
+      [formGroup]="formControls"
+      (submit)="send()">
+  <div class="field">
+    <label class="label">
+      <span>Email</span>
+      <span class="is-size-6 has-text-danger"> *</span>
+    </label>
+
+    <div class="control has-icons-left">
+      <input
+        id="email"
+        class="input"
+        type="email"
+        formControlName="email"
+        placeholder="Enter your email"
+        [class.is-danger]="(email.errors?.['required'] || email.errors?.['email']) && formDir.submitted" />
+      <span class="icon is-small is-left">
+        <i class="fas fa-envelope"></i>
+      </span>
+    </div>
+
+    <p class="help is-danger"
+       *ngIf="email.errors?.['required'] && formDir.submitted">
+      Email is required!
+    </p>
+    <p class="help is-danger"
+       *ngIf="email.errors?.['email'] && formDir.submitted">
+      Email is not valid!
+    </p>
+  </div>
+
+  <div class="field">
+    <label class="label">
+      <span>Name</span>
+      <span class="is-size-6 has-text-danger"> *</span>
+    </label>
+
+    <div class="control">
+      <input
+        id="contactName"
+        class="input"
+        type="text"
+        formControlName="contactName"
+        placeholder="Enter your name"
+        [class.is-danger]="contactName.errors?.['required'] && formDir.submitted" />
+    </div>
+
+    <p class="help is-danger"
+       *ngIf="contactName.errors?.['required'] && formDir.submitted">
+      Name is required!
+    </p>
+  </div>
+
+  <div class="field">
+    <label class="label">
+      <span>Message</span>
+      <span class="is-size-6 has-text-danger"> *</span>
+    </label>
+
+    <div class="control">
+      <textarea id="message"
+                class="textarea"
+                rows="8"
+                formControlName="message"
+                placeholder="Enter your message"
+                [class.is-danger]="message.errors?.['required'] && formDir.submitted"></textarea>
+    </div>
+
+    <p class="help is-danger"
+       *ngIf="message.errors?.['required'] && formDir.submitted">
+      Message is required!
+    </p>
+  </div>
+
+  <div class="field has-text-centered">
+    <div class="control">
+      <button id="send"
+              type="submit"
+              class="button is-medium is-link is-rounded"
+              [class.is-loading]="sending">
+        <span class="icon">
+          <i class="fas fa-paper-plane"></i>
+        </span>
+        <span>Send</span>
+      </button>
+    </div>
+  </div>
+</form>

@@ -329,6 +329,24 @@
 <section id="contact" class="hero has-background-link-95">
   <div class="hero-body">
     <h3 class="title is-3 has-text-centered is-main">Contact</h3>
+    <p class="mb-5">For any inquiries, please use the contact form below to reach out to us.</p>
+
+    @if (!messageSent) {
+      <app-contact-form [sending]="sendingMessage"
+                        (sendMessage)="sendMessage($event)">
+      </app-contact-form>
+    } @else {
+      <div class="box has-text-centered">
+        <div>
+        <span class="icon has-text-success is-large">
+          <i class="far fa-2x fa-check-circle"></i>
+        </span>
+        </div>
+        <p>
+          Thank you for your interest! We will respond as soon as possible.
+        </p>
+      </div>
+    }
   </div>
 </section>
 
