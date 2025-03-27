@@ -1,0 +1,115 @@
+<app-main-hero></app-main-hero>
+
+<section class="hero">
+  <div class="hero-body">
+    <h3 class="title is-3 has-text-centered is-main">Features</h3>
+
+    <div class="columns is-centered">
+      <div class="column is-one-third">
+        <div class="box is-fullheight content is-small has-background-link-100">
+          <h6 class="title is-6">
+            Microscopic Core, Modular Design
+          </h6>
+          <p>Start small and grow as you go. All you need is a GitHub account and Docker to start publishing content.</p>
+          <p>Sapphire CMS uses a <strong>tiny</strong> core that can be progressively enhanced with <strong>plug-and-play modules</strong> as your project grows.</p>
+        </div>
+      </div>
+
+      <div class="column is-one-third">
+        <div class="box is-fullheight content is-small has-background-link-100">
+          <h6 class="title is-6">
+            Built for the Serverless World
+          </h6>
+          <p>Sapphire CMS is a <strong>first-class citizen of the serverless ecosystem</strong>.</p>
+          <p>Deploy effortlessly to <strong>Vercel, Netlify, Cloudflare Workers, Firebase Functions, AWS Lambda</strong>, and more.</p>
+        </div>
+      </div>
+
+      <div class="column is-one-third">
+        <div class="box is-fullheight content is-small has-background-link-100">
+          <h6 class="title is-6">
+            Headless & Framework-Agnostic
+          </h6>
+          <p>Use <strong>any frontend you want</strong> — Next.js, Nuxt, Astro, Svelte, or plain HTML.</p>
+          <p>Sapphire CMS delivers content via flexible, decoupled APIs that <strong>fit any stack</strong>.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column is-one-third">
+        <div class="box is-fullheight content is-small has-background-link-100">
+          <h6 class="title is-6">
+            Lightning-Fast Content Delivery
+          </h6>
+          <p>Render and push content directly to <strong>CDNs or edge databases</strong>.</p>
+          <p>Enjoy near-zero latency delivery that feels like content is <strong>hardcoded into your app</strong>, but with full CMS flexibility.</p>
+        </div>
+      </div>
+
+      <div class="column is-one-third">
+        <div class="box is-fullheight content is-small has-background-link-100">
+          <h6 class="title is-6">
+            Content Shapers for Every Channel
+          </h6>
+          <p>Target different platforms with precision.</p>
+          <p>Use <strong>content shapers</strong> to tailor output for:</p>
+
+          <ul>
+            <li>Mobile vs Desktop</li>
+            <li>Social media (e.g. Twitter/X, Instagram, etc)</li>
+            <li>Newsletters or SEO snippets</li>
+          </ul>
+
+          <p>Resize images, shorten text, plug in AI — shape your content pipeline as you wish.</p>
+        </div>
+      </div>
+
+      <div class="column is-one-third">
+        <div class="box is-fullheight content is-small has-background-link-100">
+          <h6 class="title is-6">
+            Instant Visual Editing
+          </h6>
+          <p>Edit your content <strong>live and visually</strong>, right from the page.</p>
+          <p>Use the Sapphire CMS <strong>Chrome or Firefox plugin</strong> to fix typos or tweak text directly on your production site.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column is-one-third">
+        <div class="box is-fullheight content is-small has-background-link-100">
+          <h6 class="title is-6">
+            Serverless Search Engine
+          </h6>
+          <p>Integrate <strong>Sapphire Search</strong> — a lightweight, fast, serverless-native search engine built just for Sapphire CMS.</p>
+          <p>Enable your users to <strong>search content</strong>, without relying on third-party search services.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="hero has-background-link-95">
+  <div class="hero-body">
+    <h3 class="title is-3 has-text-centered is-main">Contact</h3>
+    <p class="mb-5">For any inquiries, please use the contact form below to reach out to us.</p>
+
+    @if (!messageSent) {
+      <app-contact-form [sending]="sendingMessage"
+                        (sendMessage)="sendMessage($event)">
+      </app-contact-form>
+    } @else {
+      <div class="box has-text-centered">
+        <div>
+        <span class="icon has-text-success is-large">
+          <i class="far fa-2x fa-check-circle"></i>
+        </span>
+        </div>
+        <p>
+          Thank you for your interest! We will respond as soon as possible.
+        </p>
+      </div>
+    }
+  </div>
+</section>

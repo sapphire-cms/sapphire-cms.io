@@ -1,0 +1,66 @@
+<nav class="navbar">
+  <div class="navbar-brand">
+    <a class="navbar-item"
+       routerLink="/home">
+      <img src="assets/logo.svg" alt="Logo of Sapphire CMS" />
+    </a>
+
+    <span class="navbar-burger"
+          data-target="navbarMenu"
+          aria-label="menu"
+          aria-expanded="false"
+          (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+  </div>
+
+  <div class="navbar-menu"
+       [class.is-active]="menuOpen">
+    <div class="navbar-start">
+      <a class="navbar-item"
+         routerLink="/home">
+        <span>Home</span>
+      </a>
+      <a class="navbar-item"
+         routerLink="/sponsorship">
+        <span>Sponsorship</span>
+      </a>
+      <a class="navbar-item"
+         routerLink="/home"
+         fragment="contact">
+        <span>Contact</span>
+      </a>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field is-grouped">
+          <p class="control">
+            <a href="https://github.com/sapphire-cms"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="button is-white">
+              <span class="icon">
+                <i class="fa-brands fa-2x fa-github"></i>
+              </span>
+            </a>
+          </p>
+
+          <p class="control">
+            <a href="#"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="button is-white">
+              <span class="icon">
+                <i class="fa-brands fa-2x fa-discord"></i>
+              </span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
