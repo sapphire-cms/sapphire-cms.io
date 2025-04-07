@@ -1,15 +1,83 @@
 <app-main-hero></app-main-hero>
 
 <section class="hero">
-  <div class="hero-body">
+  <div class="hero-body layout-wrapper">
+    <h3 class="title is-3 has-text-centered is-main">Why Sapphire?</h3>
+
+    <div class="content">
+      <p>
+        Sapphire CMS was born from a simple realization:
+        <strong>the modern web is still missing a truly serverless-first CMS.</strong>
+        While a few headless CMS options exist, they’re often:
+      </p>
+      <ul>
+        <li>Heavily tied to a single cloud provider</li>
+        <li>Or locked into a specific frontend framework</li>
+      </ul>
+      <p>Sapphire CMS takes a different path — <strong>built from the ground up to be:</strong></p>
+    </div>
+
+    <div class="box is-fullheight content has-background-link-100">
+      <h4 class="title is-4 has-text-centered is-main">Environment-Agnostic</h4>
+      <p>Runs anywhere JavaScript can:</p>
+      <p>Cloud, edge, terminal, CI/CD, Node, Bun — even in the browser.</p>
+      <p class="has-text-right"><i>No lock-in. No dependencies. Total freedom.</i></p>
+    </div>
+
+    <div class="box is-fullheight content has-background-link-100">
+      <h4 class="title is-4 has-text-centered is-main">Truly Headless</h4>
+      <p>No frontend bias. Build your presentation with React, Vue, Angular, Svelte, Astro, Next, Nuxt — or just HTML.</p>
+      <p class="has-text-right"><i>Sapphire gives you content. You control the experience.</i></p>
+    </div>
+
+    <div class="box is-fullheight content has-background-link-100">
+      <h4 class="title is-4 has-text-centered is-main">Modular & Hackable</h4>
+      <p>Powered by a tiny, pluggable core.</p>
+      <p>Need GitHub storage? A Firebase deployment target? Markdown rendering? Just add the module.</p>
+      <p class="has-text-right"><i>Sapphire CMS is built to be extended, tweaked, and reimagined.</i></p>
+    </div>
+
+    <div class="box is-fullheight content has-background-link-100">
+      <h4 class="title is-4 has-text-centered is-main">Low-Code, Low-Config</h4>
+      <p>Spin up a full CMS in minutes — no boilerplate.</p>
+      <p class="has-text-right"><i>A few terminal commands and a couple YAML files is all it takes.</i></p>
+    </div>
+
+    <div class="box is-fullheight content has-background-link-100 has-text">
+      <h4 class="title is-4 has-text-centered is-main">Future-First Features</h4>
+      <p>Sapphire CMS brings innovations other platforms barely dream of:</p>
+      <ul>
+        <li>Channel-specific content shaping (social, mobile, email, etc.)</li>
+        <li>On-page visual editing via browser extension or embedded tag.</li>
+        <li>Built-in serverless search engine</li>
+      </ul>
+    </div>
+
+    <div class="box is-fullheight content has-background-link-100">
+      <h4 class="title is-4 has-text-centered is-main">Loved by Both Devs and Editors</h4>
+      <p>Developers get control and composability.</p>
+      <p>Content managers get clean tools and instant editing.</p>
+    </div>
+  </div>
+</section>
+
+<section class="hero">
+  <div class="hero-body layout-wrapper">
     <h3 class="title is-3 has-text-centered is-main">Features</h3>
 
     <div class="columns is-centered">
       <div class="column is-one-third">
         <div class="box is-fullheight content is-small has-background-link-100">
-          <h6 class="title is-6">
+          <p class="has-text-centered">
+            <span class="icon">
+              <i class="fa-solid fa-3x fa-atom"></i>
+            </span>
+          </p>
+
+          <h6 class="title is-6 has-text-info-30">
             Microscopic Core, Modular Design
           </h6>
+
           <p>Start small and grow as you go. All you need is a GitHub account and Docker to start publishing content.</p>
           <p>Sapphire CMS uses a <strong>tiny</strong> core that can be progressively enhanced with <strong>plug-and-play modules</strong> as your project grows.</p>
         </div>
@@ -17,9 +85,16 @@
 
       <div class="column is-one-third">
         <div class="box is-fullheight content is-small has-background-link-100">
-          <h6 class="title is-6">
+          <p class="has-text-centered">
+            <span class="icon">
+              <i class="fa-solid fa-3x fa-cloud"></i>
+            </span>
+          </p>
+
+          <h6 class="title is-6 has-text-info-30">
             Built for the Serverless World
           </h6>
+
           <p>Sapphire CMS is a <strong>first-class citizen of the serverless ecosystem</strong>.</p>
           <p>Deploy effortlessly to <strong>Vercel, Netlify, Cloudflare Workers, Firebase Functions, AWS Lambda</strong>, and more.</p>
         </div>
@@ -27,9 +102,16 @@
 
       <div class="column is-one-third">
         <div class="box is-fullheight content is-small has-background-link-100">
-          <h6 class="title is-6">
+          <p class="has-text-centered">
+            <span class="icon">
+              <i class="fa-solid fa-3x fa-masks-theater"></i>
+            </span>
+          </p>
+
+          <h6 class="title is-6 has-text-info-30">
             Headless & Framework-Agnostic
           </h6>
+
           <p>Use <strong>any frontend you want</strong> — Next.js, Nuxt, Astro, Svelte, or plain HTML.</p>
           <p>Sapphire CMS delivers content via flexible, decoupled APIs that <strong>fit any stack</strong>.</p>
         </div>
@@ -39,9 +121,16 @@
     <div class="columns is-centered">
       <div class="column is-one-third">
         <div class="box is-fullheight content is-small has-background-link-100">
-          <h6 class="title is-6">
+          <p class="has-text-centered">
+            <span class="icon">
+              <i class="fa-solid fa-3x fa-bolt"></i>
+            </span>
+          </p>
+
+          <h6 class="title is-6 has-text-info-30">
             Lightning-Fast Content Delivery
           </h6>
+
           <p>Render and push content directly to <strong>CDNs or edge databases</strong>.</p>
           <p>Enjoy near-zero latency delivery that feels like content is <strong>hardcoded into your app</strong>, but with full CMS flexibility.</p>
         </div>
@@ -49,9 +138,16 @@
 
       <div class="column is-one-third">
         <div class="box is-fullheight content is-small has-background-link-100">
-          <h6 class="title is-6">
+          <p class="has-text-centered">
+            <span class="icon">
+              <i class="fa-solid fa-3x fa-shapes"></i>
+            </span>
+          </p>
+
+          <h6 class="title is-6 has-text-info-30">
             Content Shapers for Every Channel
           </h6>
+
           <p>Target different platforms with precision.</p>
           <p>Use <strong>content shapers</strong> to tailor output for:</p>
 
@@ -67,9 +163,16 @@
 
       <div class="column is-one-third">
         <div class="box is-fullheight content is-small has-background-link-100">
-          <h6 class="title is-6">
+          <p class="has-text-centered">
+            <span class="icon">
+              <i class="fa-solid fa-3x fa-pencil"></i>
+            </span>
+          </p>
+
+          <h6 class="title is-6 has-text-info-30">
             Instant Visual Editing
           </h6>
+
           <p>Edit your content <strong>live and visually</strong>, right from the page.</p>
           <p>Use the Sapphire CMS <strong>Chrome or Firefox plugin</strong> to fix typos or tweak text directly on your production site.</p>
         </div>
@@ -79,9 +182,16 @@
     <div class="columns is-centered">
       <div class="column is-one-third">
         <div class="box is-fullheight content is-small has-background-link-100">
-          <h6 class="title is-6">
+          <p class="has-text-centered">
+            <span class="icon">
+              <i class="fa-solid fa-3x fa-magnifying-glass"></i>
+            </span>
+          </p>
+
+          <h6 class="title is-6 has-text-info-30">
             Serverless Search Engine
           </h6>
+
           <p>Integrate <strong>Sapphire Search</strong> — a lightweight, fast, serverless-native search engine built just for Sapphire CMS.</p>
           <p>Enable your users to <strong>search content</strong>, without relying on third-party search services.</p>
         </div>
@@ -91,7 +201,7 @@
 </section>
 
 <section id="contact" class="hero has-background-link-95">
-  <div class="hero-body">
+  <div class="hero-body layout-wrapper">
     <h3 class="title is-3 has-text-centered is-main">Contact</h3>
     <p class="mb-5">For any inquiries, please use the contact form below to reach out to us.</p>
 

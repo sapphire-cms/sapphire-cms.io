@@ -1,3 +1,10 @@
+.layout-wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .has-image-centered {
   margin-left: auto;
   margin-right: auto;
@@ -13,7 +20,11 @@ h3.is-main,
 h4.is-main,
 h5.is-main,
 h6.is-main {
-  background: -webkit-linear-gradient(120deg, #62e5fb 30%, #0150e3);
+  background: -webkit-linear-gradient(120deg, #57d0e4 30%, #0150e3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.button.is-main {
+  background-color: #3a9bea;
 }

@@ -11,11 +11,4 @@ import {RouterLink} from '@angular/router';
   styleUrl: './sponsorship-page.component.css'
 })
 export class SponsorshipPageComponent {
-  public scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  }
-
 }

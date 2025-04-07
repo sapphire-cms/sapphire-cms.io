@@ -8,6 +8,7 @@ import {NavigationStart, Router, RouterLink} from '@angular/router';
     RouterLink
   ],
   templateUrl: './navbar.component.html',
+  styleUrl: './navbar.component.css',
 })
 export class NavbarComponent {
   public menuOpen = false;
