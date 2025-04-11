@@ -202,12 +202,21 @@
 
 <section id="contact" class="hero has-background-link-95">
   <div class="hero-body layout-wrapper">
-    <h3 class="title is-3 has-text-centered is-main">Contact</h3>
-    <p class="mb-5">For any inquiries, please use the contact form below to reach out to us.</p>
+    @if (!contactShown && !messageSent) {
+      <h3 class="title is-3 has-text-centered is-main">Waitlist</h3>
+      <p class="mb-5">Join our waitlist to get early access.</p>
 
-    @if (!messageSent) {
+      <app-subscribe-form [sending]="sendingMessage"
+                          (subscribe)="subscribe($event)"
+                          (askQuestion)="contactShown = true">
+      </app-subscribe-form>
+    } @else if (contactShown && !messageSent) {
+      <h3 class="title is-3 has-text-centered is-main">Contact</h3>
+      <p class="mb-5">For any inquiries, please use the contact form below to reach out to us.</p>
+
       <app-contact-form [sending]="sendingMessage"
-                        (sendMessage)="sendMessage($event)">
+                        (sendMessage)="sendMessage($event)"
+                        (back)="contactShown = false">
       </app-contact-form>
     } @else {
       <div class="box has-text-centered">

@@ -1,0 +1,51 @@
+<form #formDir="ngForm"
+      [formGroup]="formControls"
+      (submit)="doSubscribe()">
+  <div class="field">
+    <div class="control has-icons-left">
+      <input
+        id="email"
+        class="input"
+        type="email"
+        formControlName="email"
+        placeholder="Enter your email"
+        [class.is-danger]="(email.errors?.['required'] || email.errors?.['email']) && formDir.submitted" />
+      <span class="icon is-small is-left">
+        <i class="fas fa-envelope"></i>
+      </span>
+    </div>
+
+    <p class="help is-danger"
+       *ngIf="email.errors?.['required'] && formDir.submitted">
+      Email is required!
+    </p>
+    <p class="help is-danger"
+       *ngIf="email.errors?.['email'] && formDir.submitted">
+      Email is not valid!
+    </p>
+  </div>
+
+  <div class="field is-grouped is-grouped-centered">
+    <div class="control">
+      <button type="submit"
+              class="button is-link is-rounded is-main"
+              [class.is-loading]="sending">
+        <span class="icon">
+          <i class="fa-solid fa-gem"></i>
+        </span>
+        <span>Request to join</span>
+      </button>
+    </div>
+
+    <div class="control">
+      <button class="button is-link is-rounded is-inverted has-text-link-70"
+              (click)="askQuestion.emit()"
+              [class.is-loading]="sending">
+        <span class="icon">
+          <i class="fas fa-question-circle"></i>
+        </span>
+        <span>Ask question</span>
+      </button>
+    </div>
+  </div>
+</form>

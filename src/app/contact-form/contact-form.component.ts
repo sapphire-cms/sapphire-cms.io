@@ -15,6 +15,9 @@ export class ContactFormComponent {
   public sending = false;
 
   @Output()
+  public readonly back = new EventEmitter<void>();
+
+  @Output()
   public readonly sendMessage = new EventEmitter<ContactMessage>();
 
   public readonly email: FormControl;
