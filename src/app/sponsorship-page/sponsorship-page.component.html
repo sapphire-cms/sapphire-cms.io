@@ -27,22 +27,12 @@
     <div class="columns">
       <div class="column">
         <div class="box has-background-warning-95">
-          <figure class="image has-image-centered mb-3">
-            <img src="assets/tiers/quartz.svg"
-                 style="height: 50px;"
-                 alt="Representation of quartz cristal.">
-          </figure>
+          <app-sponsor-tier-snippet [sponsorTier]="quartzTier"
+                                    [imgHeight]="50"
+                                    titleClass="has-text-warning-30">
+          </app-sponsor-tier-snippet>
 
-          <h5 class="title is-5 has-text-warning-30 has-text-centered">Quartz Supporter</h5>
-          <h6 class="subtitle is-6 has-text-centered">
-            <span>Donation: </span>
-            <span class="is-family-monospace is-size-5">$500</span>
-          </h6>
-
-          <h6 class="title is-6 has-text-centered mt-3">For whom:</h6>
-          <h6 class="subtitle is-6 has-text-centered is-italic">Small Dev Agencies, Indie Devs</h6>
-
-          <div class="has-text-centered">
+          <div class="has-text-centered mt-5">
             <a class="button is-warning"
                routerLink="/sponsorship"
                fragment="quartz">
@@ -54,22 +44,12 @@
 
       <div class="column">
         <div class="box has-background-link-95">
-          <figure class="image has-image-centered mb-3">
-            <img src="assets/tiers/amethyst.svg"
-                 style="height: 50px;"
-                 alt="Representation of amethyst cristal.">
-          </figure>
+          <app-sponsor-tier-snippet [sponsorTier]="amethystTier"
+                                    [imgHeight]="50"
+                                    titleClass="has-text-link-60" >
+          </app-sponsor-tier-snippet>
 
-          <h5 class="title is-5 has-text-link-60 has-text-centered">Amethyst Sponsor</h5>
-          <h6 class="subtitle is-6 has-text-centered">
-            <span>Donation: </span>
-            <span class="is-family-monospace is-size-5">$1,000</span>
-          </h6>
-
-          <h6 class="title is-6 has-text-centered mt-3">For whom:</h6>
-          <h6 class="subtitle is-6 has-text-centered is-italic">Dev Agencies</h6>
-
-          <div class="has-text-centered">
+          <div class="has-text-centered mt-5">
             <a class="button is-link"
                routerLink="/sponsorship"
                fragment="amethyst">
@@ -96,22 +76,12 @@
     <div class="columns">
       <div class="column">
         <div class="box has-background-danger-95">
-          <figure class="image has-image-centered mb-3">
-            <img src="assets/tiers/ruby.svg"
-                 style="height: 75px;"
-                 alt="Representation of ruby cristal.">
-          </figure>
+          <app-sponsor-tier-snippet [sponsorTier]="rubyTier"
+                                    [imgHeight]="75"
+                                    titleClass="has-text-danger-30" >
+          </app-sponsor-tier-snippet>
 
-          <h5 class="title is-5 has-text-danger-30 has-text-centered">Ruby Partner</h5>
-          <h6 class="subtitle is-6 has-text-centered">
-            <span>Donation: </span>
-            <span class="is-family-monospace is-size-5">$5,000</span>
-          </h6>
-
-          <h6 class="title is-6 has-text-centered mt-3">For whom:</h6>
-          <h6 class="subtitle is-6 has-text-centered is-italic">Web Magazines</h6>
-
-          <div class="has-text-centered">
+          <div class="has-text-centered mt-5">
             <a class="button is-danger"
                routerLink="/sponsorship"
                fragment="ruby">
@@ -123,22 +93,12 @@
 
       <div class="column">
         <div class="box has-background-info-95">
-          <figure class="image has-image-centered mb-3">
-            <img src="assets/tiers/diamond.svg"
-                 style="height: 75px;"
-                 alt="Representation of diamond cristal.">
-          </figure>
+          <app-sponsor-tier-snippet [sponsorTier]="diamondTier"
+                                    [imgHeight]="75"
+                                    titleClass="has-text-info-60" >
+          </app-sponsor-tier-snippet>
 
-          <h5 class="title is-5 has-text-info-60 has-text-centered">Diamond Partner</h5>
-          <h6 class="subtitle is-6 has-text-centered">
-            <span>Donation: </span>
-            <span class="is-family-monospace is-size-5">$10,000</span>
-          </h6>
-
-          <h6 class="title is-6 has-text-centered mt-3">For whom:</h6>
-          <h6 class="subtitle is-6 has-text-centered is-italic">Large Web Magazines, Cloud/Infra Providers</h6>
-
-          <div class="has-text-centered">
+          <div class="has-text-centered mt-5">
             <a class="button is-info"
                routerLink="/sponsorship"
                fragment="diamond">
@@ -159,15 +119,15 @@
                  alt="Representation of obsidian cristal.">
           </figure>
 
-          <h5 class="title is-5 has-text-white has-text-centered">Obsidian Founding Partner</h5>
+          <h5 class="title is-5 has-text-white has-text-centered">{{ obsidianTier.tier }}</h5>
           <h6 class="subtitle is-6 has-text-grey-light is-italic has-text-centered">(Exclusive Tier – Only 10 Spots Available)</h6>
           <h6 class="subtitle is-6 has-text-centered has-text-grey-lighter">
             <span>Donation: </span>
-            <span class="is-family-monospace is-size-5">$10,000+</span>
+            <span class="is-family-monospace is-size-5">${{ obsidianTier.donation }}+</span>
           </h6>
 
           <h6 class="title is-6 has-text-centered mt-3 has-text-grey-lighter">For whom:</h6>
-          <h6 class="subtitle is-6 has-text-centered is-italic has-text-white">Large Web Magazines, Cloud/Infra Providers</h6>
+          <h6 class="subtitle is-6 has-text-centered is-italic has-text-white">{{ obsidianTier['for-whom']?.join(', ') }}</h6>
 
           <div class="has-text-centered">
             <a class="button is-light is-outlined"
@@ -186,32 +146,9 @@
          class="hero is-fullheight has-background-warning-95">
   <div class="hero-body layout-wrapper">
     <div>
-      <figure class="image has-image-centered">
-        <img src="assets/tiers/quartz.svg"
-             style="height: 110px;"
-             alt="Representation of quartz cristal.">
-      </figure>
-
-      <div class="content mt-3">
-        <h4 class="title is-4 has-text-warning-30">Quartz Supporter</h4>
-        <h5 class="subtitle is-5 mt-5">Donation: $500</h5>
-
-        <p>
-          The <strong class="has-text-warning-30">Quartz tier</strong> is open to anyone who wants to contribute their <strong class="has-text-warning-30">grain of sand</strong> to the foundation of the next generation of CMS.
-        </p>
-        <p>
-          Whether you're a <strong class="has-text-warning-30">small developer agency or a professional user</strong> who loves Sapphire CMS, your support means the world to us.
-        </p>
-        <p>
-          Your contribution helps us move faster, build better, and keep the project truly open.
-        </p>
-
-        <h6 class="title is-6 has-text-warning-30">You’ll receive:</h6>
-        <ul>
-          <li>Your company’s logo displayed in the <strong class="has-text-warning-30">Supporters section</strong> on our website.</li>
-          <li><strong class="has-text-warning-30">A thank-you shoutout</strong> on our social media channels.</li>
-        </ul>
-      </div>
+      <app-sponsor-tier-presentation [sponsorTier]="quartzTier"
+                                     highlightClass="has-text-warning-30">
+      </app-sponsor-tier-presentation>
     </div>
   </div>
 </section>
@@ -220,31 +157,9 @@
          class="hero is-fullheight has-background-link-95">
   <div class="hero-body layout-wrapper">
     <div>
-      <figure class="image has-image-centered">
-        <img src="assets/tiers/amethyst.svg"
-             style="height: 110px;"
-             alt="Representation of amethyst cristal.">
-      </figure>
-
-      <div class="content mt-3">
-        <h4 class="title is-4 has-text-link-60">Amethyst Sponsor</h4>
-        <h5 class="subtitle is-5 mt-5">Donation: $1,000</h5>
-
-        <p>
-          The <strong class="has-text-link-60">Amethyst tier</strong> is designed for <strong class="has-text-link-60">developer agencies and tech teams</strong> using Sapphire CMS to build powerful,
-          modern content platforms — whether for themselves or their clients.
-        </p>
-        <p>
-          Becoming an Amethyst Sponsor shows that your company is committed to delivering
-          <strong class="has-text-link-60">future-proof, high-performance solutions</strong> built for the modern web.
-        </p>
-
-        <h6 class="title is-6 has-text-link-60">You’ll receive:</h6>
-        <ul>
-          <li>Your company’s logo displayed in the <strong class="has-text-link-60">Amethyst Sponsors section</strong> on our website.</li>
-          <li><strong class="has-text-link-60">Occasional mentions</strong> in our public updates and social posts via <strong class="has-text-link-60">round-robin rotation</strong>.</li>
-        </ul>
-      </div>
+      <app-sponsor-tier-presentation [sponsorTier]="amethystTier"
+                                     highlightClass="has-text-link-60">
+      </app-sponsor-tier-presentation>
     </div>
   </div>
 </section>
@@ -253,32 +168,9 @@
          class="hero is-fullheight has-background-danger-95">
   <div class="hero-body layout-wrapper">
     <div>
-      <figure class="image has-image-centered">
-        <img src="assets/tiers/ruby.svg"
-             style="height: 110px;"
-             alt="Representation of ruby cristal.">
-      </figure>
-
-      <div class="content mt-3">
-        <h4 class="title is-4 has-text-danger-30">Ruby Partner</h4>
-        <h5 class="subtitle is-5 mt-5">Donation: $5,000</h5>
-
-        <p>
-          The <strong class="has-text-danger-30">Ruby Partner</strong> tier is designed for companies actively using Sapphire CMS in production and looking for <strong class="has-text-danger-30">priority technical support</strong>
-          and <strong class="has-text-danger-30">faster issue resolution</strong>.
-        </p>
-        <p>
-          It’s a perfect fit for <strong class="has-text-danger-30">small to mid-sized businesses</strong> whose operations
-          <strong class="has-text-danger-30">depend heavily on content creation and delivery</strong>
-          — and who want priority access to the team behind the CMS.
-        </p>
-
-        <h6 class="title is-6 has-text-danger-30">You’ll receive:</h6>
-        <ul>
-          <li>Your company’s logo featured in the <strong class="has-text-danger-30">Ruby Partners section</strong> of our site.</li>
-          <li><strong class="has-text-danger-30">Priority support and issue handling</strong>, with faster turnaround and dedicated attention.</li>
-        </ul>
-      </div>
+      <app-sponsor-tier-presentation [sponsorTier]="rubyTier"
+                                     highlightClass="has-text-danger-30">
+      </app-sponsor-tier-presentation>
     </div>
   </div>
 </section>
@@ -287,33 +179,9 @@
          class="hero is-fullheight has-background-info-95">
   <div class="hero-body layout-wrapper">
     <div>
-      <figure class="image has-image-centered">
-        <img src="assets/tiers/diamond.svg"
-             style="height: 110px;"
-             alt="Representation of diamond cristal.">
-      </figure>
-
-      <div class="content mt-3">
-        <h4 class="title is-4 has-text-info-60">Diamond Partner</h4>
-        <h5 class="subtitle is-5 mt-5">Donation: $10,000</h5>
-
-        <p>
-          Becoming a <strong class="has-text-info-60">Diamond Partner</strong> means more than just support —
-          it’s a statement that your company shares our <strong class="has-text-info-60">vision</strong> and is committed to shaping the future of web content.
-        </p>
-        <p>
-          This tier is reserved for <strong class="has-text-info-60">forward-thinking companies</strong> whose values align with ours,
-          and who want to play an <strong class="has-text-info-60">active role in the evolution of Sapphire CMS</strong>.
-        </p>
-
-        <h6 class="title is-6 has-text-info-60">You’ll receive:</h6>
-        <ul>
-          <li><strong class="has-text-info-60">Premium logo placement</strong> in the exclusive Diamond Partner section.</li>
-          <li><strong class="has-text-info-60">Direct influence</strong> over our roadmap and feature prioritization.</li>
-          <li><strong class="has-text-info-60">Priority access and support</strong> from the core team.</li>
-          <li>A <strong class="has-text-info-60">tailored presentation/workshop</strong> delivered by the founder of Sapphire CMS, at your office (virtual or on-site).</li>
-        </ul>
-      </div>
+      <app-sponsor-tier-presentation [sponsorTier]="diamondTier"
+                                     highlightClass="has-text-info-60">
+      </app-sponsor-tier-presentation>
     </div>
   </div>
 </section>
@@ -322,35 +190,10 @@
          class="hero is-fullheight has-background-dark">
   <div class="hero-body layout-wrapper">
     <div>
-      <figure class="image has-image-centered">
-        <img src="assets/tiers/obsidian.svg"
-             style="height: 110px;"
-             alt="Representation of obsidian cristal.">
-      </figure>
-
-      <div class="content has-text-white mt-3">
-        <h4 class="title is-4 has-text-white">Obsidian Founding Partner</h4>
-        <h6 class="subtitle is-6 has-text-grey-light is-italic">(Exclusive Tier – Only 10 Spots Available)</h6>
-        <h5 class="subtitle is-5 has-text-grey-lighter">Donation: $10,000+</h5>
-
-        <p>
-          Becoming an <strong class="has-text-white">Obsidian Founding Partner</strong> means more than making a donation —
-          it means becoming the <strong class="has-text-white">foundation stone of a new generation of CMS</strong>.
-        </p>
-        <p>
-          This exclusive tier is reserved for <strong class="has-text-white">10 carefully selected companies</strong>
-          who recognized the potential of <strong class="has-text-white">Progressive Headless CMS</strong> before the world caught on.
-        </p>
-
-        <h6 class="title is-6 has-text-white">You’ll receive:</h6>
-        <ul>
-          <li><strong class="has-text-white">Lifetime recognition</strong> on the homepage and GitHub.</li>
-          <li>Your company’s logo in the <strong class="has-text-white">most prominent and dedicated space</strong> for Founding Partners.</li>
-          <li><strong class="has-text-white">Top priority</strong> in roadmap discussions and feature requests.</li>
-          <li><strong class="has-text-white">All benefits of the Diamond Tier</strong>, and then some.</li>
-          <li>And, of course — our <strong class="has-text-white">deepest gratitude and permanent respect</strong> as one of the first to believe.</li>
-        </ul>
-      </div>
+      <app-sponsor-tier-presentation [sponsorTier]="obsidianTier"
+                                     contentClass="has-text-white"
+                                     highlightClass="has-text-white">
+      </app-sponsor-tier-presentation>
     </div>
   </div>
 </section>

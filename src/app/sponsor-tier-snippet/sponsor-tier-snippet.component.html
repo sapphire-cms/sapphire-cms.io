@@ -1,0 +1,13 @@
+<figure class="image has-image-centered mb-3">
+  <img [src]="sponsorTier.img"
+       [ngStyle]="{ 'height.px': imgHeight }" />
+</figure>
+
+<h5 class="title is-5 has-text-centered" [ngClass]="titleClass">{{ sponsorTier.tier }}</h5>
+<h6 class="subtitle is-6 has-text-centered">
+  <span>Donation: </span>
+  <span class="is-family-monospace is-size-5">${{ sponsorTier.donation | number }}</span>
+</h6>
+
+<h6 class="title is-6 has-text-centered mt-3">For whom:</h6>
+<h6 class="subtitle is-6 has-text-centered is-italic">{{ sponsorTier['for-whom']?.join(', ') }}</h6>

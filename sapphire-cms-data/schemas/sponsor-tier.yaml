@@ -1,0 +1,47 @@
+name: sponsor-tier
+label: Sponsor Tiers
+description: Collection of available sponsor tiers
+type: collection
+fields:
+  - name: tier
+    label: Tier Name
+    description: A catchy name for the sponsor tier.
+    type: text
+    required: true
+
+  - name: img
+    label: Tier Image
+    example: assets/tiers/amethyst.svg
+    type: text
+    required: true
+
+  - name: available
+    label: Is Tier Available
+    type: check
+    required: true
+
+  - name: category
+    label: Sponsor Tier Category
+    type:
+      name: tag
+      params:
+        values:
+          - sponsor
+          - partner
+          - founding partner
+
+  - name: donation
+    label: Donation Amount
+    description: Required donation amount in USD.
+    type: number
+    required: true
+
+  - name: for-whom
+    label: Preferred Targets
+    type: text
+    is-list: true
+
+  - name: description
+    label: Tier Description
+    type: rich-text
+    required: true

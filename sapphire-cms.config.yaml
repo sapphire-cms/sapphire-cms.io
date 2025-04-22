@@ -1,0 +1,14 @@
+config:
+  debug: true
+  modules:
+    cli:
+      editor: gedit
+    node:
+      data-dir: ./sapphire-cms-data
+      output-dir: ./src/app/generated/cms
+    codegen:
+      placeholder: true
+
+layers:
+  bootstrap: "@node"
+  persistence: "@node"
