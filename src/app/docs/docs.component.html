@@ -1,0 +1,29 @@
+<section class="section">
+  <div class="container">
+    <div class="columns is-variable is-6">
+      <app-docs-menu></app-docs-menu>
+
+      <div class="column content">
+        <h3 class="title is-3 is-main">
+          <span>{{ doc.title }}</span>
+        </h3>
+
+        <markdown lineNumbers
+                  clipboard
+                  [data]="doc.content"
+                  [clipboardButtonTemplate]="btnCopyToClip"></markdown>
+      </div>
+    </div>
+  </div>
+</section>
+
+<ng-template #btnCopyToClip>
+  <button type="button"
+          class="button"
+          title="Copy to clipboard"
+          (click)="copyToClipboard()">
+    <span class="icon">
+      <i class="fa-solid fa-copy"></i>
+    </span>
+  </button>
+</ng-template>

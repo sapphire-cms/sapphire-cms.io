@@ -6,7 +6,9 @@
              alt="Logo of Sapphire CMS"
              style="width: 48px;" />
       </figure>
-      <h5 class="title is-5 is-main">Sapphire CMS</h5>
+      <h5 class="title is-5 is-main">
+        <span>Sapphire CMS</span>
+      </h5>
       <p>A modern, open-source headless CMS under the Apache 2.0 license.</p>
     </div>
 
@@ -26,8 +28,8 @@
 
     <div class="column">
       <h6 class="title is-6 has-text-grey-light">Social media</h6>
-      <div class="buttons">
 
+      <div class="buttons">
         @for (social of layout.socials; track $index) {
           <a [href]="social.href"
              target="_blank"

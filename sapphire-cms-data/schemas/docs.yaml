@@ -1,0 +1,13 @@
+name: docs
+label: Sapphire CMS Docs
+type: tree
+fields:
+  - name: title
+    label: Page Title
+    type: text
+    required: true
+
+  - name: content
+    label: Page Content
+    type: rich-text
+    required: true

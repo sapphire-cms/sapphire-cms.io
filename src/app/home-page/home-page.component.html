@@ -2,7 +2,9 @@
 
 <section class="hero">
   <div class="hero-body layout-wrapper">
-    <h3 class="title is-3 has-text-centered is-main">Why Sapphire?</h3>
+    <h3 class="title is-3 has-text-centered is-main">
+      <span>Why Sapphire?</span>
+    </h3>
 
     <div class="content">
       <p>
@@ -18,33 +20,43 @@
     </div>
 
     <div class="box is-fullheight content has-background-link-100">
-      <h4 class="title is-4 has-text-centered is-main">Environment-Agnostic</h4>
+      <h4 class="title is-4 has-text-centered is-main">
+        <span>Environment-Agnostic</span>
+      </h4>
       <p>Runs anywhere JavaScript can:</p>
       <p>Cloud, edge, terminal, CI/CD, Node, Bun — even in the browser.</p>
       <p class="has-text-right"><i>No lock-in. No dependencies. Total freedom.</i></p>
     </div>
 
     <div class="box is-fullheight content has-background-link-100">
-      <h4 class="title is-4 has-text-centered is-main">Truly Headless</h4>
+      <h4 class="title is-4 has-text-centered is-main">
+        <span>Truly Headless</span>
+      </h4>
       <p>No frontend bias. Build your presentation with React, Vue, Angular, Svelte, Astro, Next, Nuxt — or just HTML.</p>
       <p class="has-text-right"><i>Sapphire gives you content. You control the experience.</i></p>
     </div>
 
     <div class="box is-fullheight content has-background-link-100">
-      <h4 class="title is-4 has-text-centered is-main">Modular & Hackable</h4>
+      <h4 class="title is-4 has-text-centered is-main">
+        <span>Modular & Hackable</span>
+      </h4>
       <p>Powered by a tiny, pluggable core.</p>
       <p>Need GitHub storage? A Firebase deployment target? Markdown rendering? Just add the module.</p>
       <p class="has-text-right"><i>Sapphire CMS is built to be extended, tweaked, and reimagined.</i></p>
     </div>
 
     <div class="box is-fullheight content has-background-link-100">
-      <h4 class="title is-4 has-text-centered is-main">Low-Code, Low-Config</h4>
+      <h4 class="title is-4 has-text-centered is-main">
+        <span>Low-Code, Low-Config</span>
+      </h4>
       <p>Spin up a full CMS in minutes — no boilerplate.</p>
       <p class="has-text-right"><i>A few terminal commands and a couple YAML files is all it takes.</i></p>
     </div>
 
     <div class="box is-fullheight content has-background-link-100 has-text">
-      <h4 class="title is-4 has-text-centered is-main">Future-First Features</h4>
+      <h4 class="title is-4 has-text-centered is-main">
+        <span>Future-First Features</span>
+      </h4>
       <p>Sapphire CMS brings innovations other platforms barely dream of:</p>
       <ul>
         <li>Channel-specific content shaping (social, mobile, email, etc.)</li>
@@ -54,7 +66,9 @@
     </div>
 
     <div class="box is-fullheight content has-background-link-100">
-      <h4 class="title is-4 has-text-centered is-main">Loved by Both Devs and Editors</h4>
+      <h4 class="title is-4 has-text-centered is-main">
+        <span>Loved by Both Devs and Editors</span>
+      </h4>
       <p>Developers get control and composability.</p>
       <p>Content managers get clean tools and instant editing.</p>
     </div>
@@ -63,7 +77,9 @@
 
 <section class="hero">
   <div class="hero-body layout-wrapper">
-    <h3 class="title is-3 has-text-centered is-main">Features</h3>
+    <h3 class="title is-3 has-text-centered is-main">
+      <span>Features</span>
+    </h3>
 
     <div class="columns is-centered">
       <div class="column is-one-third">
@@ -203,7 +219,9 @@
 <section id="contact" class="hero has-background-link-95">
   <div class="hero-body layout-wrapper">
     @if (!contactShown && !messageSent) {
-      <h3 class="title is-3 has-text-centered is-main">Waitlist</h3>
+      <h3 class="title is-3 has-text-centered is-main">
+        <span>Waitlist</span>
+      </h3>
       <p class="mb-5">Join our waitlist to get early access.</p>
 
       <app-subscribe-form [sending]="sendingMessage"
@@ -211,7 +229,9 @@
                           (askQuestion)="contactShown = true">
       </app-subscribe-form>
     } @else if (contactShown && !messageSent) {
-      <h3 class="title is-3 has-text-centered is-main">Contact</h3>
+      <h3 class="title is-3 has-text-centered is-main">
+        <span>Contact</span>
+      </h3>
       <p class="mb-5">For any inquiries, please use the contact form below to reach out to us.</p>
 
       <app-contact-form [sending]="sendingMessage"

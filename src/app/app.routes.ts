@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import {HomePageComponent} from './home-page/home-page.component';
 import {SponsorshipPageComponent} from './sponsorship-page/sponsorship-page.component';
+import {DocsComponent} from './docs/docs.component';
 
 export interface SitemapRouteData {
   /**
@@ -41,5 +42,20 @@ export const routes: Routes = [
       changefreq: 'monthly',
       description: 'Join Sapphire CMS as a partner and help shape the next generation of headless, serverless content infrastructure. Gain visibility, influence, and early access.',
     }
-  }
+  },
+  {
+    path: 'docs',
+    children: [
+      {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: 'getting-started/introduction',
+      },
+      {
+        path: '**',
+        component: DocsComponent,
+      }
+    ],
+  },
+
 ];

@@ -14,12 +14,12 @@
   height: 100%;
 }
 
-h1.is-main,
-h2.is-main,
-h3.is-main,
-h4.is-main,
-h5.is-main,
-h6.is-main {
+h1.is-main span,
+h2.is-main span,
+h3.is-main span,
+h4.is-main span,
+h5.is-main span,
+h6.is-main span {
   background: -webkit-linear-gradient(120deg, #57d0e4 30%, #0150e3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -7,6 +7,10 @@ export const layout_default: Layout = {
       "router-link": "/home"
     },
     {
+      "label": "Docs",
+      "router-link": "/docs"
+    },
+    {
       "label": "Sponsorship",
       "router-link": "/sponsorship"
     },

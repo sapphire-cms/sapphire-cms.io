@@ -5,6 +5,16 @@
       <img src="assets/logo.svg" alt="Logo of Sapphire CMS" />
     </a>
 
+    <a class="navbar-item"
+       target="_blank"
+       rel="noopener noreferrer"
+       href="https://www.npmjs.com/settings/sapphire-cms/packages">
+      <div class="tags has-addons">
+        <!-- TODO: fetch latest version from NPM -->
+        <span class="tag is-info">v0.1.0</span>
+      </div>
+    </a>
+
     <span class="navbar-burger"
           data-target="navbarMenu"
           aria-label="menu"
@@ -20,6 +30,8 @@
   <div class="navbar-menu"
        [class.is-active]="menuOpen">
     <div class="navbar-start">
+
+
 
       @for (link of layout.links; track $index) {
         <a class="navbar-item"

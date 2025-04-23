@@ -1,3 +1,5 @@
+# ./sapphire-cms.config.yaml
+
 config:
   debug: true
   modules:

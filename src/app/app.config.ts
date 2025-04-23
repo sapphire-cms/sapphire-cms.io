@@ -6,7 +6,7 @@ import {initializeApp, provideFirebaseApp} from '@angular/fire/app';
 import {environment} from '../environments/environment';
 import {getAnalytics, provideAnalytics, ScreenTrackingService} from '@angular/fire/analytics';
 import {connectFunctionsEmulator, getFunctions, provideFunctions} from '@angular/fire/functions';
-import {provideMarkdown} from 'ngx-markdown';
+import {MARKED_OPTIONS, provideMarkdown} from 'ngx-markdown';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -14,7 +14,16 @@ export const appConfig: ApplicationConfig = {
       scrollPositionRestoration: 'top',
       anchorScrolling: 'enabled',
     })),
-    provideMarkdown(),
+    provideMarkdown({
+      markedOptions: {
+        provide: MARKED_OPTIONS,
+        useValue: {
+          gfm: true,
+          breaks: false,
+          pedantic: false,
+        },
+      },
+    }),
     provideClientHydration(),
     provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
     provideAnalytics(() => getAnalytics()),
