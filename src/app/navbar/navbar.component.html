@@ -20,45 +20,32 @@
   <div class="navbar-menu"
        [class.is-active]="menuOpen">
     <div class="navbar-start">
-      <a class="navbar-item"
-         routerLink="/home">
-        <span>Home</span>
-      </a>
-      <a class="navbar-item"
-         routerLink="/sponsorship">
-        <span>Sponsorship</span>
-      </a>
-      <a class="navbar-item"
-         routerLink="/home"
-         fragment="contact">
-        <span>Contact</span>
-      </a>
+
+      @for (link of layout.links; track $index) {
+        <a class="navbar-item"
+           [routerLink]="link['router-link']"
+           [fragment]="link.fragment">
+          <span>{{ link.label }}</span>
+        </a>
+      }
     </div>
 
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="field is-grouped">
-          <p class="control">
-            <a href="https://github.com/sapphire-cms"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="button is-white">
+          @for (social of layout.socials; track $index) {
+            <p class="control">
+              <a [href]="social.href"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="button is-white">
               <span class="icon">
-                <i class="fa-brands fa-2x fa-github"></i>
+                <i class="fa-2x"
+                   [ngClass]="social.icon"></i>
               </span>
-            </a>
-          </p>
-
-          <p class="control">
-            <a href="#"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="button is-white">
-              <span class="icon">
-                <i class="fa-brands fa-2x fa-discord"></i>
-              </span>
-            </a>
-          </p>
+              </a>
+            </p>
+          }
         </div>
       </div>
     </div>

@@ -7,6 +7,8 @@ import {MainHeroComponent} from './main-hero/main-hero.component';
 import {Meta} from '@angular/platform-browser';
 import {DOCUMENT} from '@angular/common';
 import {filter, map} from 'rxjs';
+import layout_default from './generated/cms/layout/layout';
+import layout from './generated/cms/layout/layout';
 
 const canonicalPrefix = 'https://sapphire-cms.io';
 
@@ -18,6 +20,8 @@ const canonicalPrefix = 'https://sapphire-cms.io';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  public readonly layout = layout_default;
+
   constructor(private readonly router: Router,
               private readonly activatedRoute: ActivatedRoute,
               private readonly meta: Meta,

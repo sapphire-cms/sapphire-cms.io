@@ -1,0 +1,51 @@
+name: layout
+label: Layout
+description: Content for navbar & footer
+type: singleton
+fields:
+  - name: links
+    label: Links
+    description: Links to the pages of this website
+    type: group
+    required: true
+    is-list: true
+    fields:
+      - name: label
+        label: Label
+        type: text
+        example: Home
+        required: true
+
+      - name: router-link
+        type: text
+        required: true
+
+      - name: fragment
+        type: text
+        required: false
+
+  - name: socials
+    label: Socials
+    description: Links to the social media
+    type: group
+    required: true
+    is-list: true
+    fields:
+      - name: label
+        label: Label
+        type: text
+        example: Twitter
+        required: true
+
+      - name: href
+        label: Link
+        type: text
+        example: https://twitter/sapphire-cms
+        required: true
+
+      - name: icon
+        label: Icon Class
+        description: Fontawesome classes for the icon
+        type: text
+        example: fa-brands fa-twitter
+        required: true

@@ -12,49 +12,34 @@
 
     <div class="column">
       <h6 class="title is-6 has-text-grey-light">Links</h6>
-      <p>
-        <a class="has-text-white is-size-7"
-           routerLink="/home">
-          Home
-        </a>
-      </p>
-      <p>
-        <a class="has-text-white is-size-7"
-           routerLink="/sponsorship">
-          Sponsorship
-        </a>
-      </p>
-      <p>
-        <a class="has-text-white is-size-7"
-           routerLink="/home"
-           fragment="contact">
-          Contact
-        </a>
-      </p>
+
+      @for (link of layout.links; track $index) {
+        <p>
+          <a class="has-text-white is-size-7"
+             [routerLink]="link['router-link']"
+             [fragment]="link.fragment">
+            <span>{{ link.label }}</span>
+          </a>
+        </p>
+      }
     </div>
 
     <div class="column">
       <h6 class="title is-6 has-text-grey-light">Social media</h6>
       <div class="buttons">
-        <a href="https://github.com/sapphire-cms"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="button is-inverted"
-           style="border: none">
-          <span class="icon">
-            <i class="fa-brands fa-2x fa-github"></i>
-          </span>
-        </a>
 
-        <a href="#"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="button is-inverted"
-           style="border: none">
-          <span class="icon">
-            <i class="fa-brands fa-2x fa-discord"></i>
-          </span>
+        @for (social of layout.socials; track $index) {
+          <a [href]="social.href"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="button is-inverted"
+             style="border: none">
+            <span class="icon">
+              <i class="fa-2x"
+                 [ngClass]="social.icon"></i>
+            </span>
         </a>
+        }
       </div>
     </div>
   </div>
