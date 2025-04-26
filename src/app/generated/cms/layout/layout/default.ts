@@ -23,7 +23,7 @@ export const layout_default: Layout = {
   "socials": [
     {
       "label": "GitHub",
-      "href": "https://github.com/sapphire-cms",
+      "href": "https://github.com/sapphire-cms/sapphire-cms",
       "icon": "fa-brands fa-github"
     },
     {

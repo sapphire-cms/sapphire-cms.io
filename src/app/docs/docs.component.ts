@@ -27,6 +27,8 @@ import documentShapers_default from '../generated/cms/docs/usage/document-shaper
 export class DocsComponent {
   public doc: Docs = introduction_default;
 
+  public isMenuVisible = false;
+
   private readonly pages: { [key : string]: Docs } = {
     'getting-started/introduction': introduction_default,
     'getting-started/core-concepts': coreConcepts_default,
@@ -49,7 +51,13 @@ export class DocsComponent {
       });
   }
 
+  toggleMenu() {
+    this.isMenuVisible = !this.isMenuVisible;
+  }
+
   copyToClipboard() {
     // DO NOTHING, handled by ngx-markdown
   }
+
+  protected readonly filter = filter;
 }

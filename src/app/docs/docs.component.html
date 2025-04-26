@@ -1,7 +1,25 @@
-<section class="section">
+<nav class="navbar is-hidden-widescreen is-hidden-tablet">
+  <div class="navbar-brand">
+    <a class="navbar-item"
+       (click)="toggleMenu()">
+      <span class="icon">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </span>
+      <span>Docs Menu</span>
+    </a>
+  </div>
+</nav>
+
+<section class="section" (click)="isMenuVisible = false">
   <div class="container">
     <div class="columns is-variable is-6">
-      <app-docs-menu></app-docs-menu>
+      <div class="column is-one-quarter"
+           [class.is-hidden-mobile]="!isMenuVisible">
+        <div class="docs-menu-wrapper"
+             [class.mobile-overlay]="isMenuVisible">
+          <app-docs-menu></app-docs-menu>
+        </div>
+      </div>
 
       <div class="column content">
         <h3 class="title is-3 is-main">
