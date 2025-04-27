@@ -7,12 +7,18 @@ import installation_default from '../generated/cms/docs/getting-started/installa
 import cmsConfig_default from '../generated/cms/docs/usage/cms-config';
 import contentSchemas_default from '../generated/cms/docs/usage/content-schemas';
 import renderingPipelines_default from '../generated/cms/docs/usage/rendering-pipelines';
-import text_default from '../generated/cms/docs/usage/content-modeling/field-types/text';
-import tag_default from '../generated/cms/docs/usage/content-modeling/field-types/tag';
 import {Docs} from '../generated/cms/docs/docs.types';
 import {MarkdownComponent} from 'ngx-markdown';
 import coreConcepts_default from '../generated/cms/docs/getting-started/core-concepts';
 import documentShapers_default from '../generated/cms/docs/usage/document-shapers';
+import fieldTypes_default from '../generated/cms/docs/content-modeling/field-types';
+import check_default from '../generated/cms/docs/content-modeling/field-types/check';
+import group_default from '../generated/cms/docs/content-modeling/field-types/group';
+import number_default from '../generated/cms/docs/content-modeling/field-types/number';
+import reference_default from '../generated/cms/docs/content-modeling/field-types/reference';
+import richText_default from '../generated/cms/docs/content-modeling/field-types/rich-text';
+import text_default from '../generated/cms/docs/content-modeling/field-types/text';
+import tag_default from '../generated/cms/docs/content-modeling/field-types/tag';
 
 @Component({
   selector: 'app-docs',
@@ -37,8 +43,14 @@ export class DocsComponent {
     'usage/content-schemas': contentSchemas_default,
     'usage/rendering-pipelines': renderingPipelines_default,
     'usage/document-shapers': documentShapers_default,
-    'usage/content-modeling/field-types/text': text_default,
-    'usage/content-modeling/field-types/tag': tag_default,
+    'content-modeling/field-types': fieldTypes_default,
+    'content-modeling/field-types/check': check_default,
+    'content-modeling/field-types/group': group_default,
+    'content-modeling/field-types/number': number_default,
+    'content-modeling/field-types/reference': reference_default,
+    'content-modeling/field-types/rich-text': richText_default,
+    'content-modeling/field-types/tag': tag_default,
+    'content-modeling/field-types/text': text_default,
   };
 
   constructor(private readonly router: Router) {
