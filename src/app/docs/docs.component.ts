@@ -19,6 +19,12 @@ import reference_default from '../generated/cms/docs/content-modeling/field-type
 import richText_default from '../generated/cms/docs/content-modeling/field-types/rich-text';
 import text_default from '../generated/cms/docs/content-modeling/field-types/text';
 import tag_default from '../generated/cms/docs/content-modeling/field-types/tag';
+import fieldValidators_default from '../generated/cms/docs/content-modeling/field-validators';
+import between_default from '../generated/cms/docs/content-modeling/field-validators/between';
+import integer_default from '../generated/cms/docs/content-modeling/field-validators/integer';
+import required_default from '../generated/cms/docs/content-modeling/field-validators/required';
+import cli_default from '../generated/cms/docs/content-management/cli';
+import node_default from '../generated/cms/docs/deployment/node';
 
 @Component({
   selector: 'app-docs',
@@ -51,6 +57,12 @@ export class DocsComponent {
     'content-modeling/field-types/rich-text': richText_default,
     'content-modeling/field-types/tag': tag_default,
     'content-modeling/field-types/text': text_default,
+    'content-modeling/field-validators': fieldValidators_default,
+    'content-modeling/field-validators/between': between_default,
+    'content-modeling/field-validators/integer': integer_default,
+    'content-modeling/field-validators/required': required_default,
+    'content-management/cli': cli_default,
+    'deployment/node': node_default,
   };
 
   constructor(private readonly router: Router) {
