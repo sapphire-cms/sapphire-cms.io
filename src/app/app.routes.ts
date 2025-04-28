@@ -54,6 +54,11 @@ export const routes: Routes = [
       {
         path: '**',
         component: DocsComponent,
+        title: 'Support Sapphire CMS – Docs',
+        data: {
+          priority: 0.8,
+          changefreq: 'monthly',
+        }
       }
     ],
   },
