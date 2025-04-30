@@ -7,6 +7,22 @@ fields:
     type: text
     required: true
 
+  - name: precedent
+    label: Precedent Page
+    required: false
+    type:
+      name: reference
+      params:
+        store: docs
+
+  - name: next
+    label: Next Page
+    required: false
+    type:
+      name: reference
+      params:
+        store: docs
+
   - name: content
     label: Page Content
     type: rich-text

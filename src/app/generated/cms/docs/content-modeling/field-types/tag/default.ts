@@ -2,5 +2,7 @@ import {Docs} from "../../../docs.types";
 
 export const tag_default: Docs = {
   "title": "Tag Type",
+  "precedent": "docs/content-modeling/field-types/rich-text",
+  "next": "docs/content-modeling/field-types/text",
   "content": "The `tag` type is a handy tool for categorizing and classifying documents.\nThink of tags as **predefined categories** that you assign to your content.\n\nIt is one of the **parameterized field types** provided by the core module.\n\nExample of a `tag` field definition:\n\n```yaml\nfields:\n  - name: category\n    label: Sponsor Tier Category\n    type:\n      name: tag\n      params:\n        values:\n          - sponsor\n          - partner\n          - founding partner\n```\n\nThe tag type supports the following parameters:\n\n| Parameter | Type            | Mandatory | Description                                                                     |\n|-----------|-----------------|-----------|---------------------------------------------------------------------------------|\n| values    | list of strings | yes       | List of authorized tag values that can be assigned.                             |\n| multiple  | boolean         | no        | Flag indicating whether a document can have multiple tags. Defaults to `false`. |"
 };

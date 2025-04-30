@@ -2,5 +2,7 @@ import {Docs} from "../../../docs.types";
 
 export const richText_default: Docs = {
   "title": "Rich Text Type",
+  "precedent": "docs/content-modeling/field-types/reference",
+  "next": "docs/content-modeling/field-types/tag",
   "content": "The `rich-text` type is the most convenient way to represent the **main content** of documents.\nIt allows the input of **formatted and styled textual data**. Internally, Sapphire stores this data as **Markdown**.\n\nThe `rich-text` type is recommended for any **long chunks of text**, even if the text is not heavily formatted or styled.\nFor relatively short strings — such as titles, names, or short sentences — the `text` type should be used instead.\n\nDefining a `rich-text` field in your content schema is straightforward.\nSimply declare it like this:\n\n```yaml\nname: blog\ntype: collection\nfields:\n  - name: content\n    type: rich-text\n    required: true\n```"
 };

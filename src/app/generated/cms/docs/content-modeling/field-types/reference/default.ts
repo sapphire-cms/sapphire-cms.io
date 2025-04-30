@@ -2,5 +2,7 @@ import {Docs} from "../../../docs.types";
 
 export const reference_default: Docs = {
   "title": "Reference Type",
+  "precedent": "docs/content-modeling/field-types/number",
+  "next": "docs/content-modeling/field-types/rich-text",
   "content": "The `reference` type allows you to define a **unidirectional link** between documents, either within the same store or across different stores.\n\nIt is one of the **parameterized field types** provided by the core module.\n\nExample of a *blog* content schema that has a field referencing documents from the *author* collection:\n\n```yaml\nname: blog\ntype: collection\nfields:\n  - name: content\n    type: rich-text\n    required: true\n  \n  - name: author\n    label: Author of the post\n    required: true\n    type:\n      name: reference\n      params:\n        store: author\n```\n\nThe `reference` type has only one mandatory parameter:\n\n| Parameter | Type   | Mandatory | Description                                                             |\n|-----------|--------|-----------|-------------------------------------------------------------------------|\n| store     | string | yes       | Specifies the authorized store (content schema) that can be referenced. |"
 };

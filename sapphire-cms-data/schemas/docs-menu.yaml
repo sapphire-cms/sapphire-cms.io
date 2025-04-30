@@ -1,0 +1,23 @@
+name: docs-menu
+label: Docs Side Menu
+type: singleton
+fields:
+  - name: sections
+    label: Doc Sections
+    required: true
+    is-list: true
+    type: group
+    fields:
+      - name: label
+        label: Label
+        type: text
+        required: true
+
+      - name: pages
+        label: Section Pages
+        required: true
+        is-list: true
+        type:
+          name: reference
+          params:
+            store: docs

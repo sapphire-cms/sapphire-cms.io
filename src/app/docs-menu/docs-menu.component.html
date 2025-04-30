@@ -1,4 +1,14 @@
 <aside class="menu pt-4 pl-4">
+<!--  @for (section of menu.sections; track $index) {-->
+<!--    <p class="menu-label">{{ section.label }}</p>-->
+<!--    <ul class="menu-list">-->
+<!--      @for (ref of section.pages; track $index) {-->
+<!--        <li><a [routerLink]="'/' + ref">{{ refToTitle(ref) }}</a></li>-->
+<!--      }-->
+<!--    </ul>-->
+<!--  }-->
+
+
   <p class="menu-label">Getting Started</p>
   <ul class="menu-list">
     <li><a routerLink="/docs/getting-started/introduction">Introduction</a></li>

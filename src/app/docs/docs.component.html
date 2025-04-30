@@ -30,6 +30,40 @@
                   clipboard
                   [data]="doc.content"
                   [clipboardButtonTemplate]="btnCopyToClip"></markdown>
+
+        <div class="columns mt-3">
+          @if (doc.precedent) {
+            <div class="column">
+              <a class="button nav-button is-fullwidth"
+                 [routerLink]="'/' + doc.precedent">
+                <span class="icon">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </span>
+
+                <div class="ml-2">
+                  <h6 class="is-6 subtitle has-text-grey is-family-monospace">Previous</h6>
+                  <h5 class="is-5 title mt-1 mb-1">{{ refToTitle(doc.precedent) }}</h5>
+                </div>
+              </a>
+            </div>
+          }
+
+          @if (doc.next) {
+            <div class="column">
+              <a class="button nav-button is-fullwidth"
+                 [routerLink]="'/' + doc.next">
+                <div class="mr-2">
+                  <h6 class="is-6 subtitle has-text-grey is-family-monospace">Next</h6>
+                  <h5 class="is-5 title mt-1 mb-1">{{ refToTitle(doc.next) }}</h5>
+                </div>
+
+                <span class="icon">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </span>
+              </a>
+            </div>
+          }
+        </div>
       </div>
     </div>
   </div>

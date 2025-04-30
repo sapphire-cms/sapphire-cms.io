@@ -1,4 +1,4 @@
-import {Component, Inject} from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
 import {ActivatedRoute, NavigationEnd, Router, RouterOutlet} from '@angular/router';
 import {ContactFormComponent} from './contact-form/contact-form.component';
 import {NavbarComponent} from './navbar/navbar.component';
@@ -8,7 +8,7 @@ import {Meta} from '@angular/platform-browser';
 import {DOCUMENT} from '@angular/common';
 import {filter, map} from 'rxjs';
 import layout_default from './generated/cms/layout/layout';
-import layout from './generated/cms/layout/layout';
+import {MarkdownService} from 'ngx-markdown';
 
 const canonicalPrefix = 'https://sapphire-cms.io';
 
@@ -19,10 +19,11 @@ const canonicalPrefix = 'https://sapphire-cms.io';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   public readonly layout = layout_default;
 
-  constructor(private readonly router: Router,
+  constructor(private readonly markdownService: MarkdownService,
+              private readonly router: Router,
               private readonly activatedRoute: ActivatedRoute,
               private readonly meta: Meta,
               @Inject(DOCUMENT) private readonly document: Document) {
@@ -51,6 +52,16 @@ export class AppComponent {
           this.setDescription(data['description']);
         }
       });
+  }
+
+  ngOnInit() {
+    this.markdownService.renderer.blockquote = quote => {
+      return `<article class="message is-info">
+        <div class="message-body">
+          ${quote}
+        </div>
+      </article>`;
+    };
   }
 
   public scrollToTop() {
