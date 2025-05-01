@@ -1,10 +1,10 @@
-import { ApplicationConfig } from '@angular/core';
+import {ApplicationConfig, importProvidersFrom} from '@angular/core';
 import {provideRouter, withInMemoryScrolling} from '@angular/router';
-import { routes } from './app.routes';
-import { provideClientHydration } from '@angular/platform-browser';
+import {routes} from './app.routes';
+import {provideClientHydration} from '@angular/platform-browser';
 import {initializeApp, provideFirebaseApp} from '@angular/fire/app';
 import {environment} from '../environments/environment';
-import {getAnalytics, provideAnalytics, ScreenTrackingService} from '@angular/fire/analytics';
+import {AnalyticsModule} from '@angular/fire/analytics';
 import {connectFunctionsEmulator, getFunctions, provideFunctions} from '@angular/fire/functions';
 import {MARKED_OPTIONS, provideMarkdown} from 'ngx-markdown';
 
@@ -26,7 +26,7 @@ export const appConfig: ApplicationConfig = {
     }),
     provideClientHydration(),
     provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
-    provideAnalytics(() => getAnalytics()),
+    importProvidersFrom(AnalyticsModule),
     provideFunctions(() => {
       const functions = getFunctions();
       if (!environment.production) {
@@ -34,6 +34,5 @@ export const appConfig: ApplicationConfig = {
       }
       return functions;
     }),
-    ScreenTrackingService,
   ]
 };

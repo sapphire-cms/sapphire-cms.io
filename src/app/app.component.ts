@@ -9,6 +9,7 @@ import {DOCUMENT} from '@angular/common';
 import {filter, map} from 'rxjs';
 import layout_default from './generated/cms/layout/layout';
 import {MarkdownService} from 'ngx-markdown';
+import {ScreenTrackingService} from '@angular/fire/analytics';
 
 const canonicalPrefix = 'https://sapphire-cms.io';
 
@@ -16,6 +17,7 @@ const canonicalPrefix = 'https://sapphire-cms.io';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, ContactFormComponent, NavbarComponent, FooterComponent, MainHeroComponent],
+  providers: [ScreenTrackingService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -26,6 +28,7 @@ export class AppComponent implements OnInit {
               private readonly router: Router,
               private readonly activatedRoute: ActivatedRoute,
               private readonly meta: Meta,
+              private readonly trackingService: ScreenTrackingService,
               @Inject(DOCUMENT) private readonly document: Document) {
     this.router.events
       .pipe(
