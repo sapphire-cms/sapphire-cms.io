@@ -1,1 +1,0 @@
-{"id":"usage","store":"docs-menu__field-sections","path":[],"type":"collection","variant":"default","status":"DRAFT","createdAt":"2025-04-30T20:01:30.135Z","lastModifiedAt":"2025-04-30T20:01:30.135Z","createdBy":"node@0.0.0","content":{"label":"Usage","pages":["docs/usage/csm-config","docs/usage/content-schemas","docs/usage/rendering-pipelines","docs/usage/document-shapers"]}}

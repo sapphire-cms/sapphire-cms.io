@@ -1,0 +1,4 @@
+name: docs-to-ts
+source: docs
+target: "@node"
+render: "@codegen/typescript"

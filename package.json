@@ -50,10 +50,11 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "link": "npm link @sapphire-cms/core && npm link @sapphire-cms/node && npm link @sapphire-cms/cli && npm link @sapphire-cms/codegen",
+    "link": "npm link @sapphire-cms/core @sapphire-cms/node @sapphire-cms/cli @sapphire-cms/codegen @sapphire-cms/rest @sapphire-cms/manager-ui",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:sapphire-cms.io": "node dist/sapphire-cms.io/server/server.mjs",
-    "sitemap:gen": "tsx src/sitemap.ts"
+    "sitemap:gen": "tsx src/sitemap.ts",
+    "cms:start": "sapphire-node"
   }
 }

@@ -3,21 +3,53 @@ label: Docs Side Menu
 type: singleton
 fields:
   - name: sections
-    label: Doc Sections
-    required: true
+    label: Sections
     is-list: true
     type: group
     fields:
       - name: label
-        label: Label
+        label: Section Label
         type: text
         required: true
 
-      - name: pages
-        label: Section Pages
-        required: true
+      - name: topics
+        label: Topics
         is-list: true
-        type:
-          name: reference
-          params:
-            store: docs
+        type: group
+        fields:
+          - name: title
+            label: Topic Title
+            type: text
+            required: true
+
+          - name: ref
+            label: Topic Document
+            type:
+              name: reference
+              params:
+                store: docs
+
+          - name: coming-soon
+            label: Coming Soon
+            type: check
+
+          - name: chapters
+            label: Chapters
+            is-list: true
+            type: group
+            fields:
+              - name: title
+                label: Chapter Title
+                type: text
+                required: true
+
+              - name: ref
+                label: Chapter Document
+                type:
+                  name: reference
+                  params:
+                    store: docs
+
+              - name: coming-soon
+                label: Coming Soon
+                type: check

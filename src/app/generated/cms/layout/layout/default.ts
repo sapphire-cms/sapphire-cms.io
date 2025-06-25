@@ -27,6 +27,11 @@ export const layout_default: Layout = {
       "icon": "fa-brands fa-github"
     },
     {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/company/107213144",
+      "icon": "fa-brands fa-linkedin"
+    },
+    {
       "label": "Discord",
       "href": "#",
       "icon": "fa-brands fa-discord"

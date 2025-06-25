@@ -1,5 +1,3 @@
-# ./sapphire-cms.config.yaml
-
 config:
   debug: true
   modules:
@@ -8,9 +6,9 @@ config:
     node:
       data-dir: ./sapphire-cms-data
       output-dir: ./src/app/generated/cms
-    codegen:
-      placeholder: true
 
 layers:
   bootstrap: "@node"
   persistence: "@node"
+  admin: "@rest"
+  management: "@rest"

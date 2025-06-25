@@ -1,0 +1,4 @@
+name: layout-to-ts
+source: layout
+target: "@node"
+render: "@codegen/typescript"

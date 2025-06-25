@@ -30,7 +30,7 @@ export class DocsService {
     'docs/getting-started/introduction': introduction_default,
     'docs/getting-started/core-concepts': coreConcepts_default,
     'docs/getting-started/installation': installation_default,
-    'docs/usage/csm-config': cmsConfig_default,
+    'docs/usage/cms-config': cmsConfig_default,
     'docs/usage/content-schemas': contentSchemas_default,
     'docs/usage/rendering-pipelines': renderingPipelines_default,
     'docs/usage/document-shapers': documentShapers_default,

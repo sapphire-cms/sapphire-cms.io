@@ -1,6 +1,15 @@
 export type DocsMenu = {
-  sections: {
+  sections?: {
     label: string;
-    pages: string[];
+    topics?: {
+      title: string;
+      ref?: string;
+      "coming-soon"?: boolean;
+      chapters?: {
+        title: string;
+        ref?: string;
+        "coming-soon"?: boolean;
+      }[];
+    }[];
   }[];
 };

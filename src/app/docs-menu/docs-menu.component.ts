@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import {RouterLink} from '@angular/router';
-import {DocsService} from '../docs.service';
 import docsMenu_default from '../generated/cms/docs-menu/docs-menu';
 
 @Component({
@@ -13,12 +12,9 @@ import docsMenu_default from '../generated/cms/docs-menu/docs-menu';
   styleUrl: './docs-menu.component.css'
 })
 export class DocsMenuComponent {
-  public readonly menu = docsMenu_default;
+  protected readonly menu = docsMenu_default;
 
-  constructor(private readonly docsService: DocsService) {
-  }
-
-  refToTitle(ref: string): string {
-    return this.docsService.refToTitle(ref);
+  protected refToRoute(docRef: string): string {
+    return '/' + docRef.split(':')[0];
   }
 }

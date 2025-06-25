@@ -1,219 +1,36 @@
 <aside class="menu pt-4 pl-4">
-<!--  @for (section of menu.sections; track $index) {-->
-<!--    <p class="menu-label">{{ section.label }}</p>-->
-<!--    <ul class="menu-list">-->
-<!--      @for (ref of section.pages; track $index) {-->
-<!--        <li><a [routerLink]="'/' + ref">{{ refToTitle(ref) }}</a></li>-->
-<!--      }-->
-<!--    </ul>-->
-<!--  }-->
+  @for (section of menu.sections; track $index) {
+    <p class="menu-label">{{ section.label }}</p>
+    <ul class="menu-list">
+      @for (topic of section.topics; track $index) {
+        <li>
+          @if (topic.ref) {
+            <a [routerLink]="refToRoute(topic.ref)">{{ topic.title }}</a>
+          } @else if (topic['coming-soon']) {
+            <a>
+              <span>{{ topic.title }}</span>
+              &nbsp;
+              <span class="tag is-warning">Coming soon</span>
+            </a>
+          }
 
-
-  <p class="menu-label">Getting Started</p>
-  <ul class="menu-list">
-    <li><a routerLink="/docs/getting-started/introduction">Introduction</a></li>
-    <li><a routerLink="/docs/getting-started/core-concepts">Core Concepts</a></li>
-    <li><a routerLink="/docs/getting-started/installation">Installation</a></li>
-  </ul>
-
-  <p class="menu-label">Usage</p>
-  <ul class="menu-list">
-    <li><a routerLink="/docs/usage/csm-config">CMS Config</a></li>
-    <li><a routerLink="/docs/usage/content-schemas">Content Schemas</a></li>
-    <li><a routerLink="/docs/usage/rendering-pipelines">Rendering Pipelines</a></li>
-    <li><a routerLink="/docs/usage/document-shapers">Document Shapers</a></li>
-    <li>
-      <a>
-        <span>AOT Bundling</span>
-        &nbsp;
-        <span class="tag is-warning">Coming soon</span>
-      </a>
-    </li>
-  </ul>
-
-  <p class="menu-label">Content Modeling</p>
-  <ul class="menu-list">
-    <li>
-      <a routerLink="/docs/content-modeling/field-types">Field Types</a>
-      <ul>
-        <li><a routerLink="/docs/content-modeling/field-types/check">Check</a></li>
-        <li><a routerLink="/docs/content-modeling/field-types/group">Group</a></li>
-        <li><a routerLink="/docs/content-modeling/field-types/number">Number</a></li>
-        <li><a routerLink="/docs/content-modeling/field-types/reference">Reference</a></li>
-        <li><a routerLink="/docs/content-modeling/field-types/rich-text">Rich Text</a></li>
-        <li><a routerLink="/docs/content-modeling/field-types/tag">Tag</a></li>
-        <li><a routerLink="/docs/content-modeling/field-types/text">Text</a></li>
-      </ul>
-    </li>
-    <li>
-      <a routerLink="/docs/content-modeling/field-validators">Field Validators</a>
-      <ul>
-        <li><a routerLink="/docs/content-modeling/field-validators/between">Between</a></li>
-        <li><a routerLink="/docs/content-modeling/field-validators/integer">Integer</a></li>
-        <li><a routerLink="/docs/content-modeling/field-validators/required">Required</a></li>
-      </ul>
-    </li>
-  </ul>
-
-  <p class="menu-label">Content Management</p>
-  <ul class="menu-list">
-    <li><a routerLink="/docs/content-management/cli">CLI</a></li>
-    <li>
-      <a>
-        <span>REST API</span>
-        &nbsp;
-        <span class="tag is-warning">Coming soon</span>
-      </a>
-    </li>
-    <li>
-      <a>
-        <span>GraphQL</span>
-        &nbsp;
-        <span class="tag is-warning">Coming soon</span>
-      </a>
-    </li>
-    <li>
-      <a>
-        <span>Manager UI</span>
-        &nbsp;
-        <span class="tag is-warning">Coming soon</span>
-      </a>
-    </li>
-    <li>
-      <a>
-        <span>Live Editor</span>
-        &nbsp;
-        <span class="tag is-warning">Coming soon</span>
-      </a>
-    </li>
-  </ul>
-
-  <p class="menu-label">Deployment</p>
-  <ul class="menu-list">
-    <li>
-      <a routerLink="/docs/deployment/node">
-        <span>Node</span>
-        &nbsp;
-        <span class="tag is-warning">Coming soon</span>
-      </a>
-    </li>
-    <li>
-      <a>
-        <span>Bun</span>
-        &nbsp;
-        <span class="tag is-warning">Coming soon</span>
-      </a>
-    </li>
-    <li>
-      <a>
-        <span>AWS Lambda</span>
-        &nbsp;
-        <span class="tag is-warning">Coming soon</span>
-      </a>
-    </li>
-    <li>
-      <a>
-        <span>Firebase</span>
-        &nbsp;
-        <span class="tag is-warning">Coming soon</span>
-      </a>
-    </li>
-    <li>
-      <a>
-        <span>Vercel</span>
-        &nbsp;
-        <span class="tag is-warning">Coming soon</span>
-      </a>
-    </li>
-    <li>
-      <a>
-        <span>Browser</span>
-        &nbsp;
-        <span class="tag is-warning">Coming soon</span>
-      </a>
-    </li>
-  </ul>
-
-  <p class="menu-label">Development</p>
-  <ul class="menu-list">
-    <li>
-      <a>
-        <span>Architecture</span>
-        &nbsp;
-        <span class="tag is-warning">Coming soon</span>
-      </a>
-    </li>
-    <li>
-      <a>
-        <span>Modules</span>
-        &nbsp;
-        <span class="tag is-warning">Coming soon</span>
-      </a>
-    </li>
-    <li>
-      <a>
-        <span>Layers</span>
-        &nbsp;
-        <span class="tag is-warning">Coming soon</span>
-      </a>
-      <ul>
-        <li>
-          <a>
-            <span>Admin Layer</span>
-            &nbsp;
-            <span class="tag is-warning">Coming soon</span>
-          </a>
+          @if (topic.chapters?.length) {
+            <ul>
+              @for (chapter of topic.chapters; track $index) {
+                @if (chapter.ref) {
+                  <a [routerLink]="refToRoute(chapter.ref)">{{ chapter.title }}</a>
+                } @else if (chapter['coming-soon']) {
+                  <a>
+                    <span>{{ chapter.title }}</span>
+                    &nbsp;
+                    <span class="tag is-warning">Coming soon</span>
+                  </a>
+                }
+              }
+            </ul>
+          }
         </li>
-        <li>
-          <a>
-            <span>Bootstrap Layer</span>
-            &nbsp;
-            <span class="tag is-warning">Coming soon</span>
-          </a>
-        </li>
-        <li>
-          <a>
-            <span>Content Layer</span>
-            &nbsp;
-            <span class="tag is-warning">Coming soon</span>
-          </a>
-        </li>
-        <li>
-          <a>
-            <span>Delivery Layer</span>
-            &nbsp;
-            <span class="tag is-warning">Coming soon</span>
-          </a>
-        </li>
-        <li>
-          <a>
-            <span>Management Layer</span>
-            &nbsp;
-            <span class="tag is-warning">Coming soon</span>
-          </a>
-        </li>
-        <li>
-          <a>
-            <span>Persistence Layer</span>
-            &nbsp;
-            <span class="tag is-warning">Coming soon</span>
-          </a>
-        </li>
-        <li>
-          <a>
-            <span>Platform Layer</span>
-            &nbsp;
-            <span class="tag is-warning">Coming soon</span>
-          </a>
-        </li>
-        <li>
-          <a>
-            <span>Render Layer</span>
-            &nbsp;
-            <span class="tag is-warning">Coming soon</span>
-          </a>
-        </li>
-      </ul>
-  </li>
-  </ul>
+      }
+    </ul>
+  }
 </aside>
