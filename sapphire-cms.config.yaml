@@ -6,9 +6,17 @@ config:
     node:
       data-dir: ./sapphire-cms-data
       output-dir: ./src/app/generated/cms
+    github:
+      owner: sapphire-cms
+      repo: sapphire-cms.io
+      data-branch: master
+      data-dir: sapphire-cms-data
+      output-branch: master
+      output-dir: src/app/generated/cms
+      personal-access-token: ${env.SAPPHIRE_IO_GITHUB_PERSONAL_ACCESS_TOKEN}
 
 layers:
   bootstrap: "@node"
-  persistence: "@node"
+  persistence: "@github"
   admin: "@rest"
   management: "@rest"

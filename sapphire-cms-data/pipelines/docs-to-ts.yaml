@@ -1,4 +1,4 @@
 name: docs-to-ts
 source: docs
-target: "@node"
+target: "@github"
 render: "@codegen/typescript"

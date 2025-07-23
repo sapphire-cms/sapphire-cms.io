@@ -1,4 +1,4 @@
 name: sponsor-tier-to-ts
 source: sponsor-tier
-target: "@node"
+target: "@github"
 render: "@codegen/typescript"

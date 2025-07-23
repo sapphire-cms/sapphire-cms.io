@@ -1,4 +1,4 @@
 name: docs-menu-to-ts
 source: docs-menu
-target: "@node"
+target: "@github"
 render: "@codegen/typescript"
