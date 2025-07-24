@@ -1,1 +1,1 @@
-{"id":"home","store":"layout__field-links","path":[],"type":"collection","variant":"default","status":"DRAFT","createdAt":"2025-04-23T15:08:18.058Z","lastModifiedAt":"2025-06-28T10:16:33.155Z","createdBy":"node@0.0.0","content":{"label":"Home","router-link":"/home"}}
+{"id":"home","store":"layout__links","path":[],"type":"collection","variant":"default","status":"DRAFT","createdAt":"2025-04-23T15:08:18.058Z","lastModifiedAt":"2025-06-28T10:16:33.155Z","createdBy":"node@0.0.0","content":{"label":"Home","router-link":"/home"}}

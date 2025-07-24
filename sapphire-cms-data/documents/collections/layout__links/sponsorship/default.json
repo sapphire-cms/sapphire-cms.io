@@ -1,1 +1,1 @@
-{"id":"sponsorship","store":"layout__field-links","path":[],"type":"collection","variant":"default","status":"DRAFT","createdAt":"2025-04-23T15:25:32.375Z","lastModifiedAt":"2025-06-28T10:16:33.189Z","createdBy":"node@0.0.0","content":{"label":"Sponsorship","router-link":"/sponsorship"}}
+{"id":"sponsorship","store":"layout__links","path":[],"type":"collection","variant":"default","status":"DRAFT","createdAt":"2025-04-23T15:25:32.375Z","lastModifiedAt":"2025-06-28T10:16:33.189Z","createdBy":"node@0.0.0","content":{"label":"Sponsorship","router-link":"/sponsorship"}}
