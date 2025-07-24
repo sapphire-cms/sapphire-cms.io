@@ -1,1 +1,1 @@
-{"id":"contact","store":"layout__links","path":[],"type":"collection","variant":"default","status":"DRAFT","createdAt":"2025-04-23T15:26:12.738Z","lastModifiedAt":"2025-07-24T18:47:01.547Z","createdBy":"github@0.1.7","content":{"label":"Contact","router-link":"/home","fragment":"contact"}}
+{"id":"contact","store":"layout__links","path":[],"type":"collection","variant":"default","status":"DRAFT","createdAt":"2025-04-23T15:26:12.738Z","lastModifiedAt":"2025-07-24T18:50:28.036Z","createdBy":"github@0.1.7","content":{"label":"Contact","router-link":"/home","fragment":"contact"}}
