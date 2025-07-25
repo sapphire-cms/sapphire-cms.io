@@ -1,7 +1,7 @@
 import {SponsorTier} from "../sponsor-tier.types";
 
 export const diamond_default: SponsorTier = {
-  "tier": "Diamond Partner",
+  "tier": "Diamond PartnerX",
   "img": "assets/tiers/diamond.svg",
   "available": true,
   "category": "#partner",
