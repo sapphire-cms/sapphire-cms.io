@@ -1,7 +1,7 @@
 import {SponsorTier} from "../sponsor-tier.types";
 
 export const quartz_default: SponsorTier = {
-  "tier": "Quartz Supporter",
+  "tier": "Quartz SupporterX",
   "img": "assets/tiers/quartz.svg",
   "available": true,
   "category": "#sponsor",
