@@ -1,7 +1,7 @@
 import {SponsorTier} from "../sponsor-tier.types";
 
 export const amethyst_default: SponsorTier = {
-  "tier": "Amethyst SponsorX",
+  "tier": "Amethyst Sponsor",
   "img": "assets/tiers/amethyst.svg",
   "available": false,
   "category": "#sponsor",
