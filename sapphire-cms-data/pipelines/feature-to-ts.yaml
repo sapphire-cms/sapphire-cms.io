@@ -1,0 +1,4 @@
+name: feature-to-ts
+source: feature
+target: "@github"
+render: "@codegen/typescript"

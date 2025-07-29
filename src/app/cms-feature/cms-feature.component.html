@@ -1,0 +1,14 @@
+<div class="box is-fullheight content is-small has-background-link-100">
+  <p class="has-text-centered">
+    <span class="icon">
+      <i class="fa-solid fa-3x"
+         [ngClass]="feature.icon"></i>
+    </span>
+  </p>
+
+  <h6 class="title is-6 has-text-info-30">
+    {{ feature.title }}
+  </h6>
+
+  <markdown [data]="feature.content"></markdown>
+</div>

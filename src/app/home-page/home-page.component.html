@@ -8,113 +8,29 @@
 
     <div class="columns is-centered">
       <div class="column is-one-third">
-        <div class="box is-fullheight content is-small has-background-link-100">
-          <p class="has-text-centered">
-            <span class="icon">
-              <i class="fa-solid fa-3x fa-globe"></i>
-            </span>
-          </p>
-
-          <h6 class="title is-6 has-text-info-30">
-            Environment-Agnostic
-          </h6>
-
-          <p>Runs anywhere JavaScript can:</p>
-          <p>Cloud, edge, terminal, CI/CD, Node, Bun — even in the browser.</p>
-          <p class="has-text-right"><i>No lock-in. No dependencies. Total freedom.</i></p>
-        </div>
+        <app-argument [argument]="arguments.environmentAgnostic"></app-argument>
       </div>
 
       <div class="column is-one-third">
-        <div class="box is-fullheight content is-small has-background-link-100">
-          <p class="has-text-centered">
-            <span class="icon">
-              <i class="fa-solid fa-3x fa-unlink"></i>
-            </span>
-          </p>
-
-          <h6 class="title is-6 has-text-info-30">
-            Truly Headless
-          </h6>
-
-          <p>No frontend bias. Build your presentation with React, Vue, Angular, Svelte, Astro, Next, Nuxt — or just HTML.</p>
-          <p class="has-text-right"><i>Sapphire gives you content. You control the experience.</i></p>
-        </div>
+        <app-argument [argument]="arguments.trulyHeadless"></app-argument>
       </div>
 
       <div class="column is-one-third">
-        <div class="box is-fullheight content is-small has-background-link-100">
-          <p class="has-text-centered">
-            <span class="icon">
-              <i class="fa-solid fa-3x fa-puzzle-piece"></i>
-            </span>
-          </p>
-
-          <h6 class="title is-6 has-text-info-30">
-            Modular & Hackable
-          </h6>
-
-          <p>Powered by a tiny, pluggable core.</p>
-          <p>Need GitHub storage? A Firebase deployment target? Markdown rendering? Just add the module.</p>
-          <p class="has-text-right"><i>Sapphire CMS is built to be extended, tweaked, and reimagined.</i></p>
-        </div>
+        <app-argument [argument]="arguments.modularHackable"></app-argument>
       </div>
     </div>
 
     <div class="columns is-centered">
       <div class="column is-one-third">
-        <div class="box is-fullheight content is-small has-background-link-100">
-          <p class="has-text-centered">
-            <span class="icon">
-              <i class="fa-solid fa-3x fa-sliders-h"></i>
-            </span>
-          </p>
-
-          <h6 class="title is-6 has-text-info-30">
-            Low-Code, Low-Config
-          </h6>
-
-          <p>Spin up a full CMS in minutes — no boilerplate.</p>
-          <p class="has-text-right"><i>A few terminal commands and a couple YAML files is all it takes.</i></p>
-        </div>
+        <app-argument [argument]="arguments.lowCode"></app-argument>
       </div>
 
       <div class="column is-one-third">
-        <div class="box is-fullheight content is-small has-background-link-100">
-          <p class="has-text-centered">
-            <span class="icon">
-              <i class="fa-solid fa-3x fa-rocket"></i>
-            </span>
-          </p>
-
-          <h6 class="title is-6 has-text-info-30">
-            Future-First Features
-          </h6>
-
-          <p>Sapphire CMS brings innovations other platforms barely dream of:</p>
-          <ul>
-            <li>Channel-specific content shaping (social, mobile, email, etc.)</li>
-            <li>On-page visual editing via browser extension or embedded tag.</li>
-            <li>Built-in serverless search engine</li>
-          </ul>
-        </div>
+        <app-argument [argument]="arguments.futureFirstFeatures"></app-argument>
       </div>
 
       <div class="column is-one-third">
-        <div class="box is-fullheight content is-small has-background-link-100">
-          <p class="has-text-centered">
-            <span class="icon">
-              <i class="fa-solid fa-3x fa-heart"></i>
-            </span>
-          </p>
-
-          <h6 class="title is-6 has-text-info-30">
-            Loved by Both Devs and Editors
-          </h6>
-
-          <p>Developers get control and composability.</p>
-          <p>Content managers get clean tools and instant editing.</p>
-        </div>
+        <app-argument [argument]="arguments.loved"></app-argument>
       </div>
     </div>
   </div>
@@ -128,134 +44,35 @@
 
     <div class="columns is-centered">
       <div class="column is-one-third">
-        <div class="box is-fullheight content is-small has-background-link-100">
-          <p class="has-text-centered">
-            <span class="icon">
-              <i class="fa-solid fa-3x fa-atom"></i>
-            </span>
-          </p>
-
-          <h6 class="title is-6 has-text-info-30">
-            Microscopic Core, Modular Design
-          </h6>
-
-          <p>Start small and grow as you go. All you need is a GitHub account and Docker to start publishing content.</p>
-          <p>Sapphire CMS uses a <strong>tiny</strong> core that can be progressively enhanced with <strong>plug-and-play modules</strong> as your project grows.</p>
-        </div>
+        <app-cms-feature [feature]="features.modular"></app-cms-feature>
       </div>
 
       <div class="column is-one-third">
-        <div class="box is-fullheight content is-small has-background-link-100">
-          <p class="has-text-centered">
-            <span class="icon">
-              <i class="fa-solid fa-3x fa-cloud"></i>
-            </span>
-          </p>
-
-          <h6 class="title is-6 has-text-info-30">
-            Built for the Serverless World
-          </h6>
-
-          <p>Sapphire CMS is a <strong>first-class citizen of the serverless ecosystem</strong>.</p>
-          <p>Deploy effortlessly to <strong>Vercel, Netlify, Cloudflare Workers, Firebase Functions, AWS Lambda</strong>, and more.</p>
-        </div>
+        <app-cms-feature [feature]="features.serverless"></app-cms-feature>
       </div>
 
       <div class="column is-one-third">
-        <div class="box is-fullheight content is-small has-background-link-100">
-          <p class="has-text-centered">
-            <span class="icon">
-              <i class="fa-solid fa-3x fa-masks-theater"></i>
-            </span>
-          </p>
-
-          <h6 class="title is-6 has-text-info-30">
-            Headless & Framework-Agnostic
-          </h6>
-
-          <p>Use <strong>any frontend you want</strong> — Next.js, Nuxt, Astro, Svelte, or plain HTML.</p>
-          <p>Sapphire CMS delivers content via flexible, decoupled APIs that <strong>fit any stack</strong>.</p>
-        </div>
+        <app-cms-feature [feature]="features.headless"></app-cms-feature>
       </div>
     </div>
 
     <div class="columns is-centered">
       <div class="column is-one-third">
-        <div class="box is-fullheight content is-small has-background-link-100">
-          <p class="has-text-centered">
-            <span class="icon">
-              <i class="fa-solid fa-3x fa-bolt"></i>
-            </span>
-          </p>
-
-          <h6 class="title is-6 has-text-info-30">
-            Lightning-Fast Content Delivery
-          </h6>
-
-          <p>Render and push content directly to <strong>CDNs or edge databases</strong>.</p>
-          <p>Enjoy near-zero latency delivery that feels like content is <strong>hardcoded into your app</strong>, but with full CMS flexibility.</p>
-        </div>
+        <app-cms-feature [feature]="features.fast"></app-cms-feature>
       </div>
 
       <div class="column is-one-third">
-        <div class="box is-fullheight content is-small has-background-link-100">
-          <p class="has-text-centered">
-            <span class="icon">
-              <i class="fa-solid fa-3x fa-shapes"></i>
-            </span>
-          </p>
-
-          <h6 class="title is-6 has-text-info-30">
-            Content Shapers for Every Channel
-          </h6>
-
-          <p>Target different platforms with precision.</p>
-          <p>Use <strong>content shapers</strong> to tailor output for:</p>
-
-          <ul>
-            <li>Mobile vs Desktop</li>
-            <li>Social media (e.g. Twitter/X, Instagram, etc)</li>
-            <li>Newsletters or SEO snippets</li>
-          </ul>
-
-          <p>Resize images, shorten text, plug in AI — shape your content pipeline as you wish.</p>
-        </div>
+        <app-cms-feature [feature]="features.shapers"></app-cms-feature>
       </div>
 
       <div class="column is-one-third">
-        <div class="box is-fullheight content is-small has-background-link-100">
-          <p class="has-text-centered">
-            <span class="icon">
-              <i class="fa-solid fa-3x fa-pencil"></i>
-            </span>
-          </p>
-
-          <h6 class="title is-6 has-text-info-30">
-            Instant Visual Editing
-          </h6>
-
-          <p>Edit your content <strong>live and visually</strong>, right from the page.</p>
-          <p>Use the Sapphire CMS <strong>Chrome or Firefox plugin</strong> to fix typos or tweak text directly on your production site.</p>
-        </div>
+        <app-cms-feature [feature]="features.visualEditing"></app-cms-feature>
       </div>
     </div>
 
     <div class="columns is-centered">
       <div class="column is-one-third">
-        <div class="box is-fullheight content is-small has-background-link-100">
-          <p class="has-text-centered">
-            <span class="icon">
-              <i class="fa-solid fa-3x fa-magnifying-glass"></i>
-            </span>
-          </p>
-
-          <h6 class="title is-6 has-text-info-30">
-            Serverless Search Engine
-          </h6>
-
-          <p>Integrate <strong>Sapphire Search</strong> — a lightweight, fast, serverless-native search engine built just for Sapphire CMS.</p>
-          <p>Enable your users to <strong>search content</strong>, without relying on third-party search services.</p>
-        </div>
+        <app-cms-feature [feature]="features.searchEngine"></app-cms-feature>
       </div>
     </div>
   </div>

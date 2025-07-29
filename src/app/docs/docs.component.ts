@@ -40,8 +40,14 @@ export class DocsComponent {
     // DO NOTHING, handled by ngx-markdown
   }
 
+  refToUrl(ref: string): string {
+    return ref.split(':')[0];
+  }
+
   refToTitle(ref: string): string {
-    return this.docsService.refToTitle(ref);
+    console.log(ref);
+
+    return this.docsService.refToTitle(ref.split(':')[0]);
   }
 
   protected readonly filter = filter;

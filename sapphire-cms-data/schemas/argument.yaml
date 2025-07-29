@@ -1,0 +1,19 @@
+name: argument
+label: Arguments
+description: Arguments for the section "Why Sapphire?"
+type: collection
+fields:
+  - name: title
+    label: Title
+    type: text
+    required: true
+
+  - name: icon
+    label: Icon
+    type: text
+    required: true
+
+  - name: content
+    label: Content
+    type: rich-text
+    required: true
