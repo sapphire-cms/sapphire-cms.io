@@ -1,0 +1,7 @@
+import {Argument} from "../argument.types";
+
+export const modularHackable_default: Argument = {
+  "title": "Modular & Hackable",
+  "icon": "fa-puzzle-piece",
+  "content": "Powered by a tiny, pluggable core.\n\nNeed GitHub storage? A Firebase deployment target? Markdown rendering? Just add the module.\n\n<div align=\"right\">\n*Sapphire CMS is built to be extended, tweaked, and reimagined.*\n</div>"
+};
