@@ -4,3 +4,4 @@ export * from "./headless";
 export * from "./fast";
 export * from "./shapers";
 export * from "./search-engine";
+export * from "./visual-editing";
