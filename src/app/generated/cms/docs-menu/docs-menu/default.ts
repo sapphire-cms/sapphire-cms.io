@@ -54,8 +54,8 @@ export const docsMenu_default: DocsMenu = {
         },
         {
           "title": "AOT Bundling",
-          "ref": "",
-          "coming-soon": true,
+          "ref": "docs/usage/aot:default",
+          "coming-soon": false,
           "chapters": []
         }
       ]
@@ -140,14 +140,14 @@ export const docsMenu_default: DocsMenu = {
         },
         {
           "title": "REST API",
-          "ref": "",
-          "coming-soon": true,
+          "ref": "docs/content-management/rest:default",
+          "coming-soon": false,
           "chapters": []
         },
         {
           "title": "Manager UI",
-          "ref": "",
-          "coming-soon": true,
+          "ref": "docs/content-management/manager-ui:default",
+          "coming-soon": false,
           "chapters": []
         },
         {
@@ -159,12 +159,35 @@ export const docsMenu_default: DocsMenu = {
       ]
     },
     {
+      "label": "Integrations",
+      "topics": [
+        {
+          "title": "Overview",
+          "ref": "docs/integrations/overview:default",
+          "coming-soon": false,
+          "chapters": []
+        },
+        {
+          "title": "GitHub",
+          "ref": "docs/integrations/github:default",
+          "coming-soon": false,
+          "chapters": []
+        }
+      ]
+    },
+    {
       "label": "Deployment",
       "topics": [
         {
+          "title": "Overview",
+          "ref": "docs/deployment/deployment-overview:default",
+          "coming-soon": false,
+          "chapters": []
+        },
+        {
           "title": "Node",
-          "ref": "",
-          "coming-soon": true,
+          "ref": "docs/deployment/node:default",
+          "coming-soon": false,
           "chapters": []
         },
         {

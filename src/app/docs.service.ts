@@ -21,6 +21,12 @@ import integer_default from './generated/cms/docs/content-modeling/field-validat
 import required_default from './generated/cms/docs/content-modeling/field-validators/required';
 import cli_default from './generated/cms/docs/content-management/cli';
 import node_default from './generated/cms/docs/deployment/node';
+import aot_default from './generated/cms/docs/usage/aot';
+import rest_default from './generated/cms/docs/content-management/rest';
+import managerUi_default from './generated/cms/docs/content-management/manager-ui';
+import overview_default from './generated/cms/docs/integrations/overview';
+import github_default from './generated/cms/docs/integrations/github';
+import deploymentOverview_default from './generated/cms/docs/deployment/deployment-overview';
 
 @Injectable({
   providedIn: 'root'
@@ -34,6 +40,7 @@ export class DocsService {
     'docs/usage/content-schemas': contentSchemas_default,
     'docs/usage/rendering-pipelines': renderingPipelines_default,
     'docs/usage/document-shapers': documentShapers_default,
+    'docs/usage/aot': aot_default,
     'docs/content-modeling/field-types': fieldTypes_default,
     'docs/content-modeling/field-types/check': check_default,
     'docs/content-modeling/field-types/group': group_default,
@@ -47,6 +54,11 @@ export class DocsService {
     'docs/content-modeling/field-validators/integer': integer_default,
     'docs/content-modeling/field-validators/required': required_default,
     'docs/content-management/cli': cli_default,
+    'docs/content-management/rest': rest_default,
+    'docs/content-management/manager-ui': managerUi_default,
+    'docs/integrations/overview': overview_default,
+    'docs/integrations/github': github_default,
+    'docs/deployment/deployment-overview': deploymentOverview_default,
     'docs/deployment/node': node_default,
   };
 
