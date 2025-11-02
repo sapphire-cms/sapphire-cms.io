@@ -1,22 +1,38 @@
 config:
   debug: true
   modules:
-    cli:
-      editor: gedit
-    node:
-      data-dir: ./sapphire-cms-data
-      output-dir: ./src/app/generated/cms
-    github:
-      owner: sapphire-cms
-      repo: sapphire-cms.io
-      data-branch: master
-      data-dir: sapphire-cms-data
-      output-branch: master
-      output-dir: src/app/generated/cms
-      personal-access-token: ${env.SAPPHIRE_IO_GITHUB_PERSONAL_ACCESS_TOKEN}
+    - module: cli
+      config:
+        editor: gedit
+
+    - module: node
+      config:
+        data-dir: ./sapphire-cms-data
+        output-dir: ./src/app/generated/cms
+
+    - module: github
+      config:
+        owner: sapphire-cms
+        repo: sapphire-cms.io
+        data-branch: master
+        data-dir: sapphire-cms-data
+        output-branch: master
+        output-dir: src/app/generated/cms
+        personal-access-token: ${env.SAPPHIRE_IO_GITHUB_PERSONAL_ACCESS_TOKEN}
+
+    - module: simple-auth
+      config:
+        username: ${env.SAPPHIRE_USERNAME}
+        password: ${env.SAPPHIRE_PASSWORD}
+
+    - module: aot
+      config:
+        dist: sapphire-functions/lib
 
 layers:
   bootstrap: "@node"
   persistence: "@github"
   admin: "@rest"
   management: "@rest"
+  platform: "@firebase"
+  security: "@simple-auth"

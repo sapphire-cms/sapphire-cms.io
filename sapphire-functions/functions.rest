@@ -1,0 +1,7 @@
+###
+# Get public info of CMS
+GET http://localhost:5001/sapphire-cms-io/us-central1/sapphire/rest/admin/info
+
+###
+# List all stores
+GET http://localhost:5001/sapphire-cms-io/us-central1/sapphire/rest/management/stores

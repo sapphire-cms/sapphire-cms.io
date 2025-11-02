@@ -1,0 +1,12 @@
+{
+  "name": "sapphire-functions",
+  "type": "commonjs",
+  "main": "lib/sapphire-cms/sapphire.firebase.cjs",
+  "private": true,
+  "engines": {
+    "node": "18"
+  },
+  "dependencies": {
+    "firebase-functions": "^6.0.1"
+  }
+}
