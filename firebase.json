@@ -22,20 +22,39 @@
       ]
     }
   ],
-  "hosting": {
-    "public": "dist/sapphire-cms.io/browser",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
-  },
+  "hosting": [
+    {
+      "target": "main",
+      "public": "dist/sapphire-cms.io/browser",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "target": "cms",
+      "public": "dist/sapphire",
+      "rewrites": [
+        {
+          "source": "/manager-ui/**",
+          "destination": "/manager-ui/index.html"
+        },
+        {
+          "source": "/rest/**",
+          "function": {
+            "functionId": "sapphire"
+          }
+        }
+      ]
+    }
+  ],
   "emulators": {
     "functions": {
       "port": 5001

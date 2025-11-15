@@ -6,8 +6,6 @@ import * as sendgrid from '@sendgrid/mail';
 
 sendgrid.setApiKey(process.env.SENDGRID_KEY!);
 
-console.log(process.env.SENDGRID_KEY!);
-
 const contactEmail = process.env.CONTACT_EMAIL;
 
 export class ContactService {

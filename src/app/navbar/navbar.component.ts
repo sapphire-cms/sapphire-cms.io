@@ -3,6 +3,7 @@ import {NavigationStart, Router, RouterLink} from '@angular/router';
 import {Layout} from '../generated/cms/layout/layout.types';
 import {NgClass} from '@angular/common';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {environment} from '../../environments/environment';
 
 @Component({
   selector: 'app-navbar',
@@ -20,9 +21,10 @@ export class NavbarComponent {
   @Input()
   public layout!: Layout;
 
-  public menuOpen = false;
+  protected menuOpen = false;
 
-  public latestVersion = '';
+  protected latestVersion = '';
+  protected managerUiUrl = environment.managerUiUrl;
 
   constructor(router: Router, http: HttpClient) {
     router.events.forEach((event) => {
@@ -37,7 +39,7 @@ export class NavbarComponent {
     });
   }
 
-  public toggleMenu() {
+  protected toggleMenu() {
     this.menuOpen = !this.menuOpen;
   }
 }

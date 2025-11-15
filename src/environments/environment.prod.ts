@@ -1,5 +1,6 @@
 export const environment = {
   production: true,
+  managerUiUrl: 'https://sapphire-cms-io-cms.web.app/manager-ui/',
 
   firebaseConfig: {
     apiKey: 'AIzaSyAEpgnbChOlAQjbjHnYCemxv-eoID8k0hE',

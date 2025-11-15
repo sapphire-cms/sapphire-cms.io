@@ -29,9 +29,6 @@
   <div class="navbar-menu"
        [class.is-active]="menuOpen">
     <div class="navbar-start">
-
-
-
       @for (link of layout.links; track $index) {
         <a class="navbar-item"
            [routerLink]="link['router-link']"
@@ -39,6 +36,11 @@
           <span>{{ link.label }}</span>
         </a>
       }
+
+      <a class="navbar-item"
+         [href]="managerUiUrl">
+        <span>Admin</span>
+      </a>
     </div>
 
     <div class="navbar-end">

@@ -5,6 +5,7 @@
 
 export const environment = {
   production: false,
+  managerUiUrl: 'https://sapphire-cms-io-cms.web.app/manager-ui/',
 
   firebaseConfig: {
     projectId: 'sapphire-cms-io',

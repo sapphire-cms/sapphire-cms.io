@@ -1,5 +1,18 @@
 {
   "projects": {
     "default": "sapphire-cms-io"
-  }
+  },
+  "targets": {
+    "sapphire-cms-io": {
+      "hosting": {
+        "main": [
+          "sapphire-cms"
+        ],
+        "cms": [
+          "sapphire-cms-io-cms"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
