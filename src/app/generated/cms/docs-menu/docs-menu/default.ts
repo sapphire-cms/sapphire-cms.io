@@ -164,7 +164,7 @@ export const docsMenu_default: DocsMenu = {
         {
           "title": "Username & Password",
           "ref": "",
-          "coming-soon": false,
+          "coming-soon": true,
           "chapters": []
         }
       ]
