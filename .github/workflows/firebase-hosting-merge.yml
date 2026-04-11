@@ -18,3 +18,4 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_SAPPHIRE_CMS_IO }}
           channelId: live
           projectId: sapphire-cms-io
+          target: main
