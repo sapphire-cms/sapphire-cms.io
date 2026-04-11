@@ -215,8 +215,8 @@ export const docsMenu_default: DocsMenu = {
         },
         {
           "title": "Firebase",
-          "ref": "",
-          "coming-soon": true,
+          "ref": "docs/deployment/firebase:default",
+          "coming-soon": false,
           "chapters": []
         },
         {
