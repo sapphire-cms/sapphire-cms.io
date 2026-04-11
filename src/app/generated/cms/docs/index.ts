@@ -27,3 +27,4 @@ export * from "./content-management/manager-ui";
 export * from "./integrations/overview";
 export * from "./integrations/github";
 export * from "./deployment/deployment-overview";
+export * from "./deployment/firebase";
