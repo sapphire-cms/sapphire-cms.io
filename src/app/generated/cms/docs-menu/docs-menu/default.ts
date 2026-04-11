@@ -285,6 +285,17 @@ export const docsMenu_default: DocsMenu = {
           ]
         }
       ]
+    },
+    {
+      "label": "Authentication",
+      "topics": [
+        {
+          "title": "Username & Password",
+          "ref": "",
+          "coming-soon": false,
+          "chapters": []
+        }
+      ]
     }
   ]
 };
