@@ -6,7 +6,7 @@
     "sapphire-cms-io": {
       "hosting": {
         "main": [
-          "sapphire-cms"
+          "sapphire-cms-io"
         ],
         "cms": [
           "sapphire-cms-io-cms"
