@@ -27,6 +27,7 @@ import managerUi_default from './generated/cms/docs/content-management/manager-u
 import overview_default from './generated/cms/docs/integrations/overview';
 import github_default from './generated/cms/docs/integrations/github';
 import deploymentOverview_default from './generated/cms/docs/deployment/deployment-overview';
+import firebase_default from './generated/cms/docs/deployment/firebase';
 
 @Injectable({
   providedIn: 'root'
@@ -60,6 +61,7 @@ export class DocsService {
     'docs/integrations/github': github_default,
     'docs/deployment/deployment-overview': deploymentOverview_default,
     'docs/deployment/node': node_default,
+    'docs/deployment/firebase': firebase_default,
   };
 
   public refToTitle(ref: string): string {
