@@ -202,6 +202,12 @@ export const docsMenu_default: DocsMenu = {
           "chapters": []
         },
         {
+          "title": "Firebase",
+          "ref": "docs/deployment/firebase:default",
+          "coming-soon": false,
+          "chapters": []
+        },
+        {
           "title": "Bun",
           "ref": "",
           "coming-soon": true,
@@ -211,12 +217,6 @@ export const docsMenu_default: DocsMenu = {
           "title": "AWS Lambda",
           "ref": "",
           "coming-soon": true,
-          "chapters": []
-        },
-        {
-          "title": "Firebase",
-          "ref": "docs/deployment/firebase:default",
-          "coming-soon": false,
           "chapters": []
         },
         {
