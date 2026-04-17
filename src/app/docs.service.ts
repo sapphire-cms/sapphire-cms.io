@@ -28,6 +28,7 @@ import overview_default from './generated/cms/docs/integrations/overview';
 import github_default from './generated/cms/docs/integrations/github';
 import deploymentOverview_default from './generated/cms/docs/deployment/deployment-overview';
 import firebase_default from './generated/cms/docs/deployment/firebase';
+import usernamePassword_default from './generated/cms/docs/authentication/username-password';
 
 @Injectable({
   providedIn: 'root'
@@ -57,6 +58,7 @@ export class DocsService {
     'docs/content-management/cli': cli_default,
     'docs/content-management/rest': rest_default,
     'docs/content-management/manager-ui': managerUi_default,
+    'docs/authentication/username-password': usernamePassword_default,
     'docs/integrations/overview': overview_default,
     'docs/integrations/github': github_default,
     'docs/deployment/deployment-overview': deploymentOverview_default,
