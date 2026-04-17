@@ -28,3 +28,4 @@ export * from "./integrations/overview";
 export * from "./integrations/github";
 export * from "./deployment/deployment-overview";
 export * from "./deployment/firebase";
+export * from "./authentication/username-password";
