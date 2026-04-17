@@ -163,8 +163,8 @@ export const docsMenu_default: DocsMenu = {
       "topics": [
         {
           "title": "Username & Password",
-          "ref": "",
-          "coming-soon": true,
+          "ref": "docs/authentication/username-password:default",
+          "coming-soon": false,
           "chapters": []
         }
       ]
