@@ -1,1 +1,1 @@
-ZXhwb3J0ICogZnJvbSAiLi9kb2NzLW1lbnUiOwo=
+export * from "./docs-menu";
