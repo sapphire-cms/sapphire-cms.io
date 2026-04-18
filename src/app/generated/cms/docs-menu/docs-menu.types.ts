@@ -1,15 +1,1 @@
-export type DocsMenu = {
-  sections?: {
-    label: string;
-    topics?: {
-      title: string;
-      ref?: string;
-      "coming-soon"?: boolean;
-      chapters?: {
-        title: string;
-        ref?: string;
-        "coming-soon"?: boolean;
-      }[];
-    }[];
-  }[];
-};
+ZXhwb3J0IHR5cGUgRG9jc01lbnUgPSB7CiAgc2VjdGlvbnM/OiB7CiAgICBsYWJlbDogc3RyaW5nOwogICAgdG9waWNzPzogewogICAgICB0aXRsZTogc3RyaW5nOwogICAgICByZWY/OiBzdHJpbmc7CiAgICAgICJjb21pbmctc29vbiI/OiBib29sZWFuOwogICAgICBjaGFwdGVycz86IHsKICAgICAgICB0aXRsZTogc3RyaW5nOwogICAgICAgIHJlZj86IHN0cmluZzsKICAgICAgICAiY29taW5nLXNvb24iPzogYm9vbGVhbjsKICAgICAgfVtdOwogICAgfVtdOwogIH1bXTsKfTsK
