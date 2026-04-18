@@ -1,1 +1,300 @@
-aW1wb3J0IHtEb2NzTWVudX0gZnJvbSAiLi4vZG9jcy1tZW51LnR5cGVzIjsKCmV4cG9ydCBjb25zdCBkb2NzTWVudV9kZWZhdWx0OiBEb2NzTWVudSA9IHsKICAic2VjdGlvbnMiOiBbCiAgICB7CiAgICAgICJsYWJlbCI6ICJHZXR0aW5nIFN0YXJ0ZWQtcyIsCiAgICAgICJ0b3BpY3MiOiBbCiAgICAgICAgewogICAgICAgICAgInRpdGxlIjogIkludHJvZHVjdGlvbiIsCiAgICAgICAgICAicmVmIjogImRvY3MvZ2V0dGluZy1zdGFydGVkL2ludHJvZHVjdGlvbjpkZWZhdWx0IiwKICAgICAgICAgICJjb21pbmctc29vbiI6IGZhbHNlLAogICAgICAgICAgImNoYXB0ZXJzIjogW10KICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJ0aXRsZSI6ICJDb3JlIENvbmNlcHRzIiwKICAgICAgICAgICJyZWYiOiAiZG9jcy9nZXR0aW5nLXN0YXJ0ZWQvY29yZS1jb25jZXB0czpkZWZhdWx0IiwKICAgICAgICAgICJjb21pbmctc29vbiI6IGZhbHNlLAogICAgICAgICAgImNoYXB0ZXJzIjogW10KICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJ0aXRsZSI6ICJJbnN0YWxsYXRpb24iLAogICAgICAgICAgInJlZiI6ICJkb2NzL2dldHRpbmctc3RhcnRlZC9pbnN0YWxsYXRpb246ZGVmYXVsdCIsCiAgICAgICAgICAiY29taW5nLXNvb24iOiBmYWxzZSwKICAgICAgICAgICJjaGFwdGVycyI6IFtdCiAgICAgICAgfQogICAgICBdCiAgICB9LAogICAgewogICAgICAibGFiZWwiOiAiVXNhZ2UiLAogICAgICAidG9waWNzIjogWwogICAgICAgIHsKICAgICAgICAgICJ0aXRsZSI6ICJDTVMgQ29uZmlndXJhdGlvbiIsCiAgICAgICAgICAicmVmIjogImRvY3MvdXNhZ2UvY21zLWNvbmZpZzpkZWZhdWx0IiwKICAgICAgICAgICJjb21pbmctc29vbiI6IGZhbHNlLAogICAgICAgICAgImNoYXB0ZXJzIjogW10KICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJ0aXRsZSI6ICJDb250ZW50IFNjaGVtYXMiLAogICAgICAgICAgInJlZiI6ICJkb2NzL3VzYWdlL2NvbnRlbnQtc2NoZW1hczpkZWZhdWx0IiwKICAgICAgICAgICJjb21pbmctc29vbiI6IGZhbHNlLAogICAgICAgICAgImNoYXB0ZXJzIjogW10KICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJ0aXRsZSI6ICJSZW5kZXJpbmcgUGlwZWxpbmVzIiwKICAgICAgICAgICJyZWYiOiAiZG9jcy91c2FnZS9yZW5kZXJpbmctcGlwZWxpbmVzOmRlZmF1bHQiLAogICAgICAgICAgImNvbWluZy1zb29uIjogZmFsc2UsCiAgICAgICAgICAiY2hhcHRlcnMiOiBbXQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgInRpdGxlIjogIkRvY3VtZW50IFNoYXBlcnMiLAogICAgICAgICAgInJlZiI6ICJkb2NzL3VzYWdlL2RvY3VtZW50LXNoYXBlcnM6ZGVmYXVsdCIsCiAgICAgICAgICAiY29taW5nLXNvb24iOiBmYWxzZSwKICAgICAgICAgICJjaGFwdGVycyI6IFtdCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAidGl0bGUiOiAiQU9UIEJ1bmRsaW5nIiwKICAgICAgICAgICJyZWYiOiAiZG9jcy91c2FnZS9hb3Q6ZGVmYXVsdCIsCiAgICAgICAgICAiY29taW5nLXNvb24iOiBmYWxzZSwKICAgICAgICAgICJjaGFwdGVycyI6IFtdCiAgICAgICAgfQogICAgICBdCiAgICB9LAogICAgewogICAgICAibGFiZWwiOiAiQ29udGVudCBNb2RlbGluZyIsCiAgICAgICJ0b3BpY3MiOiBbCiAgICAgICAgewogICAgICAgICAgInRpdGxlIjogIkZpZWxkIFR5cGVzIiwKICAgICAgICAgICJyZWYiOiAiZG9jcy9jb250ZW50LW1vZGVsaW5nL2ZpZWxkLXR5cGVzOmRlZmF1bHQiLAogICAgICAgICAgImNvbWluZy1zb29uIjogZmFsc2UsCiAgICAgICAgICAiY2hhcHRlcnMiOiBbCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAidGl0bGUiOiAiQ2hlY2siLAogICAgICAgICAgICAgICJyZWYiOiAiZG9jcy9jb250ZW50LW1vZGVsaW5nL2ZpZWxkLXR5cGVzL2NoZWNrOmRlZmF1bHQiLAogICAgICAgICAgICAgICJjb21pbmctc29vbiI6IGZhbHNlCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAidGl0bGUiOiAiR3JvdXAiLAogICAgICAgICAgICAgICJyZWYiOiAiZG9jcy9jb250ZW50LW1vZGVsaW5nL2ZpZWxkLXR5cGVzL2dyb3VwOmRlZmF1bHQiLAogICAgICAgICAgICAgICJjb21pbmctc29vbiI6IGZhbHNlCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAidGl0bGUiOiAiTnVtYmVyIiwKICAgICAgICAgICAgICAicmVmIjogImRvY3MvY29udGVudC1tb2RlbGluZy9maWVsZC10eXBlcy9udW1iZXI6ZGVmYXVsdCIsCiAgICAgICAgICAgICAgImNvbWluZy1zb29uIjogZmFsc2UKICAgICAgICAgICAgfSwKICAgICAgICAgICAgewogICAgICAgICAgICAgICJ0aXRsZSI6ICJSZWZlcmVuY2UiLAogICAgICAgICAgICAgICJyZWYiOiAiZG9jcy9jb250ZW50LW1vZGVsaW5nL2ZpZWxkLXR5cGVzL3JlZmVyZW5jZTpkZWZhdWx0IiwKICAgICAgICAgICAgICAiY29taW5nLXNvb24iOiBmYWxzZQogICAgICAgICAgICB9LAogICAgICAgICAgICB7CiAgICAgICAgICAgICAgInRpdGxlIjogIlJpY2ggVGV4dCIsCiAgICAgICAgICAgICAgInJlZiI6ICJkb2NzL2NvbnRlbnQtbW9kZWxpbmcvZmllbGQtdHlwZXMvcmljaC10ZXh0OmRlZmF1bHQiLAogICAgICAgICAgICAgICJjb21pbmctc29vbiI6IGZhbHNlCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAidGl0bGUiOiAiVGFnIiwKICAgICAgICAgICAgICAicmVmIjogImRvY3MvY29udGVudC1tb2RlbGluZy9maWVsZC10eXBlcy90YWc6ZGVmYXVsdCIsCiAgICAgICAgICAgICAgImNvbWluZy1zb29uIjogZmFsc2UKICAgICAgICAgICAgfSwKICAgICAgICAgICAgewogICAgICAgICAgICAgICJ0aXRsZSI6ICJUZXh0IiwKICAgICAgICAgICAgICAicmVmIjogImRvY3MvY29udGVudC1tb2RlbGluZy9maWVsZC10eXBlcy90ZXh0OmRlZmF1bHQiLAogICAgICAgICAgICAgICJjb21pbmctc29vbiI6IGZhbHNlCiAgICAgICAgICAgIH0KICAgICAgICAgIF0KICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJ0aXRsZSI6ICJGaWVsZCBWYWxpZGF0b3JzIiwKICAgICAgICAgICJyZWYiOiAiZG9jcy9jb250ZW50LW1vZGVsaW5nL2ZpZWxkLXZhbGlkYXRvcnM6ZGVmYXVsdCIsCiAgICAgICAgICAiY29taW5nLXNvb24iOiBmYWxzZSwKICAgICAgICAgICJjaGFwdGVycyI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJ0aXRsZSI6ICJCZXR3ZWVuIiwKICAgICAgICAgICAgICAicmVmIjogImRvY3MvY29udGVudC1tb2RlbGluZy9maWVsZC12YWxpZGF0b3JzL2JldHdlZW46ZGVmYXVsdCIsCiAgICAgICAgICAgICAgImNvbWluZy1zb29uIjogZmFsc2UKICAgICAgICAgICAgfSwKICAgICAgICAgICAgewogICAgICAgICAgICAgICJ0aXRsZSI6ICJJbnRlZ2VyIiwKICAgICAgICAgICAgICAicmVmIjogImRvY3MvY29udGVudC1tb2RlbGluZy9maWVsZC12YWxpZGF0b3JzL2ludGVnZXI6ZGVmYXVsdCIsCiAgICAgICAgICAgICAgImNvbWluZy1zb29uIjogZmFsc2UKICAgICAgICAgICAgfSwKICAgICAgICAgICAgewogICAgICAgICAgICAgICJ0aXRsZSI6ICJSZXF1aXJlZCIsCiAgICAgICAgICAgICAgInJlZiI6ICJkb2NzL2NvbnRlbnQtbW9kZWxpbmcvZmllbGQtdmFsaWRhdG9ycy9yZXF1aXJlZDpkZWZhdWx0IiwKICAgICAgICAgICAgICAiY29taW5nLXNvb24iOiBmYWxzZQogICAgICAgICAgICB9CiAgICAgICAgICBdCiAgICAgICAgfQogICAgICBdCiAgICB9LAogICAgewogICAgICAibGFiZWwiOiAiQ29udGVudCBNYW5hZ2VtZW50IiwKICAgICAgInRvcGljcyI6IFsKICAgICAgICB7CiAgICAgICAgICAidGl0bGUiOiAiQ0xJIiwKICAgICAgICAgICJyZWYiOiAiZG9jcy9jb250ZW50LW1hbmFnZW1lbnQvY2xpOmRlZmF1bHQiLAogICAgICAgICAgImNvbWluZy1zb29uIjogZmFsc2UsCiAgICAgICAgICAiY2hhcHRlcnMiOiBbXQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgInRpdGxlIjogIlJFU1QgQVBJIiwKICAgICAgICAgICJyZWYiOiAiZG9jcy9jb250ZW50LW1hbmFnZW1lbnQvcmVzdDpkZWZhdWx0IiwKICAgICAgICAgICJjb21pbmctc29vbiI6IGZhbHNlLAogICAgICAgICAgImNoYXB0ZXJzIjogW10KICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJ0aXRsZSI6ICJNYW5hZ2VyIFVJIiwKICAgICAgICAgICJyZWYiOiAiZG9jcy9jb250ZW50LW1hbmFnZW1lbnQvbWFuYWdlci11aTpkZWZhdWx0IiwKICAgICAgICAgICJjb21pbmctc29vbiI6IGZhbHNlLAogICAgICAgICAgImNoYXB0ZXJzIjogW10KICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJ0aXRsZSI6ICJMaXZlIEVkaXRvciIsCiAgICAgICAgICAicmVmIjogIiIsCiAgICAgICAgICAiY29taW5nLXNvb24iOiB0cnVlLAogICAgICAgICAgImNoYXB0ZXJzIjogW10KICAgICAgICB9CiAgICAgIF0KICAgIH0sCiAgICB7CiAgICAgICJsYWJlbCI6ICJBdXRoZW50aWNhdGlvbiIsCiAgICAgICJ0b3BpY3MiOiBbCiAgICAgICAgewogICAgICAgICAgInRpdGxlIjogIlVzZXJuYW1lICYgUGFzc3dvcmQiLAogICAgICAgICAgInJlZiI6ICJkb2NzL2F1dGhlbnRpY2F0aW9uL3VzZXJuYW1lLXBhc3N3b3JkOmRlZmF1bHQiLAogICAgICAgICAgImNvbWluZy1zb29uIjogZmFsc2UsCiAgICAgICAgICAiY2hhcHRlcnMiOiBbXQogICAgICAgIH0KICAgICAgXQogICAgfSwKICAgIHsKICAgICAgImxhYmVsIjogIkludGVncmF0aW9ucyIsCiAgICAgICJ0b3BpY3MiOiBbCiAgICAgICAgewogICAgICAgICAgInRpdGxlIjogIk92ZXJ2aWV3IiwKICAgICAgICAgICJyZWYiOiAiZG9jcy9pbnRlZ3JhdGlvbnMvb3ZlcnZpZXc6ZGVmYXVsdCIsCiAgICAgICAgICAiY29taW5nLXNvb24iOiBmYWxzZSwKICAgICAgICAgICJjaGFwdGVycyI6IFtdCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAidGl0bGUiOiAiR2l0SHViIiwKICAgICAgICAgICJyZWYiOiAiZG9jcy9pbnRlZ3JhdGlvbnMvZ2l0aHViOmRlZmF1bHQiLAogICAgICAgICAgImNvbWluZy1zb29uIjogZmFsc2UsCiAgICAgICAgICAiY2hhcHRlcnMiOiBbXQogICAgICAgIH0KICAgICAgXQogICAgfSwKICAgIHsKICAgICAgImxhYmVsIjogIkRlcGxveW1lbnQiLAogICAgICAidG9waWNzIjogWwogICAgICAgIHsKICAgICAgICAgICJ0aXRsZSI6ICJPdmVydmlldyIsCiAgICAgICAgICAicmVmIjogImRvY3MvZGVwbG95bWVudC9kZXBsb3ltZW50LW92ZXJ2aWV3OmRlZmF1bHQiLAogICAgICAgICAgImNvbWluZy1zb29uIjogZmFsc2UsCiAgICAgICAgICAiY2hhcHRlcnMiOiBbXQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgInRpdGxlIjogIk5vZGUiLAogICAgICAgICAgInJlZiI6ICJkb2NzL2RlcGxveW1lbnQvbm9kZTpkZWZhdWx0IiwKICAgICAgICAgICJjb21pbmctc29vbiI6IGZhbHNlLAogICAgICAgICAgImNoYXB0ZXJzIjogW10KICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJ0aXRsZSI6ICJGaXJlYmFzZSIsCiAgICAgICAgICAicmVmIjogImRvY3MvZGVwbG95bWVudC9maXJlYmFzZTpkZWZhdWx0IiwKICAgICAgICAgICJjb21pbmctc29vbiI6IGZhbHNlLAogICAgICAgICAgImNoYXB0ZXJzIjogW10KICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJ0aXRsZSI6ICJBV1MgTGFtYmRhIiwKICAgICAgICAgICJjb21pbmctc29vbiI6IHRydWUsCiAgICAgICAgICAiY2hhcHRlcnMiOiBbXQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgInRpdGxlIjogIkJ1biIsCiAgICAgICAgICAicmVmIjogIiIsCiAgICAgICAgICAiY29taW5nLXNvb24iOiB0cnVlLAogICAgICAgICAgImNoYXB0ZXJzIjogW10KICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJ0aXRsZSI6ICJWZXJjZWwiLAogICAgICAgICAgInJlZiI6ICIiLAogICAgICAgICAgImNvbWluZy1zb29uIjogdHJ1ZSwKICAgICAgICAgICJjaGFwdGVycyI6IFtdCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAidGl0bGUiOiAiQnJvd3NlciIsCiAgICAgICAgICAicmVmIjogIiIsCiAgICAgICAgICAiY29taW5nLXNvb24iOiB0cnVlLAogICAgICAgICAgImNoYXB0ZXJzIjogW10KICAgICAgICB9CiAgICAgIF0KICAgIH0sCiAgICB7CiAgICAgICJsYWJlbCI6ICJEZXZlbG9wbWVudCIsCiAgICAgICJ0b3BpY3MiOiBbCiAgICAgICAgewogICAgICAgICAgInRpdGxlIjogIkFyY2hpdGVjdHVyZSIsCiAgICAgICAgICAicmVmIjogIiIsCiAgICAgICAgICAiY29taW5nLXNvb24iOiB0cnVlLAogICAgICAgICAgImNoYXB0ZXJzIjogW10KICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJ0aXRsZSI6ICJNb2R1bGVzIiwKICAgICAgICAgICJyZWYiOiAiIiwKICAgICAgICAgICJjb21pbmctc29vbiI6IHRydWUsCiAgICAgICAgICAiY2hhcHRlcnMiOiBbXQogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgInRpdGxlIjogIkxheWVycyIsCiAgICAgICAgICAicmVmIjogIiIsCiAgICAgICAgICAiY29taW5nLXNvb24iOiB0cnVlLAogICAgICAgICAgImNoYXB0ZXJzIjogWwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgInRpdGxlIjogIkFkbWluIExheWVyIiwKICAgICAgICAgICAgICAicmVmIjogIiIsCiAgICAgICAgICAgICAgImNvbWluZy1zb29uIjogdHJ1ZQogICAgICAgICAgICB9LAogICAgICAgICAgICB7CiAgICAgICAgICAgICAgInRpdGxlIjogIkJvb3RzdHJhcCBMYXllciIsCiAgICAgICAgICAgICAgInJlZiI6ICIiLAogICAgICAgICAgICAgICJjb21pbmctc29vbiI6IHRydWUKICAgICAgICAgICAgfSwKICAgICAgICAgICAgewogICAgICAgICAgICAgICJ0aXRsZSI6ICJDb250ZW50IExheWVyIiwKICAgICAgICAgICAgICAicmVmIjogIiIsCiAgICAgICAgICAgICAgImNvbWluZy1zb29uIjogdHJ1ZQogICAgICAgICAgICB9LAogICAgICAgICAgICB7CiAgICAgICAgICAgICAgInRpdGxlIjogIkRlbGl2ZXJ5IExheWVyIiwKICAgICAgICAgICAgICAicmVmIjogIiIsCiAgICAgICAgICAgICAgImNvbWluZy1zb29uIjogdHJ1ZQogICAgICAgICAgICB9LAogICAgICAgICAgICB7CiAgICAgICAgICAgICAgInRpdGxlIjogIk1hbmFnZW1lbnQgTGF5ZXIiLAogICAgICAgICAgICAgICJyZWYiOiAiIiwKICAgICAgICAgICAgICAiY29taW5nLXNvb24iOiB0cnVlCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAidGl0bGUiOiAiUGVyc2lzdGVuY2UgTGF5ZXIiLAogICAgICAgICAgICAgICJyZWYiOiAiIiwKICAgICAgICAgICAgICAiY29taW5nLXNvb24iOiB0cnVlCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAidGl0bGUiOiAiUGxhdGZvcm0gTGF5ZXIiLAogICAgICAgICAgICAgICJyZWYiOiAiIiwKICAgICAgICAgICAgICAiY29taW5nLXNvb24iOiB0cnVlCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAidGl0bGUiOiAiUmVuZGVyIExheWVyIiwKICAgICAgICAgICAgICAicmVmIjogIiIsCiAgICAgICAgICAgICAgImNvbWluZy1zb29uIjogdHJ1ZQogICAgICAgICAgICB9CiAgICAgICAgICBdCiAgICAgICAgfQogICAgICBdCiAgICB9CiAgXQp9Owo=
+import {DocsMenu} from "../docs-menu.types";
+
+export const docsMenu_default: DocsMenu = {
+  "sections": [
+    {
+      "label": "Getting Started-s",
+      "topics": [
+        {
+          "title": "Introduction",
+          "ref": "docs/getting-started/introduction:default",
+          "coming-soon": false,
+          "chapters": []
+        },
+        {
+          "title": "Core Concepts",
+          "ref": "docs/getting-started/core-concepts:default",
+          "coming-soon": false,
+          "chapters": []
+        },
+        {
+          "title": "Installation",
+          "ref": "docs/getting-started/installation:default",
+          "coming-soon": false,
+          "chapters": []
+        }
+      ]
+    },
+    {
+      "label": "Usage",
+      "topics": [
+        {
+          "title": "CMS Configuration",
+          "ref": "docs/usage/cms-config:default",
+          "coming-soon": false,
+          "chapters": []
+        },
+        {
+          "title": "Content Schemas",
+          "ref": "docs/usage/content-schemas:default",
+          "coming-soon": false,
+          "chapters": []
+        },
+        {
+          "title": "Rendering Pipelines",
+          "ref": "docs/usage/rendering-pipelines:default",
+          "coming-soon": false,
+          "chapters": []
+        },
+        {
+          "title": "Document Shapers",
+          "ref": "docs/usage/document-shapers:default",
+          "coming-soon": false,
+          "chapters": []
+        },
+        {
+          "title": "AOT Bundling",
+          "ref": "docs/usage/aot:default",
+          "coming-soon": false,
+          "chapters": []
+        }
+      ]
+    },
+    {
+      "label": "Content Modeling",
+      "topics": [
+        {
+          "title": "Field Types",
+          "ref": "docs/content-modeling/field-types:default",
+          "coming-soon": false,
+          "chapters": [
+            {
+              "title": "Check",
+              "ref": "docs/content-modeling/field-types/check:default",
+              "coming-soon": false
+            },
+            {
+              "title": "Group",
+              "ref": "docs/content-modeling/field-types/group:default",
+              "coming-soon": false
+            },
+            {
+              "title": "Number",
+              "ref": "docs/content-modeling/field-types/number:default",
+              "coming-soon": false
+            },
+            {
+              "title": "Reference",
+              "ref": "docs/content-modeling/field-types/reference:default",
+              "coming-soon": false
+            },
+            {
+              "title": "Rich Text",
+              "ref": "docs/content-modeling/field-types/rich-text:default",
+              "coming-soon": false
+            },
+            {
+              "title": "Tag",
+              "ref": "docs/content-modeling/field-types/tag:default",
+              "coming-soon": false
+            },
+            {
+              "title": "Text",
+              "ref": "docs/content-modeling/field-types/text:default",
+              "coming-soon": false
+            }
+          ]
+        },
+        {
+          "title": "Field Validators",
+          "ref": "docs/content-modeling/field-validators:default",
+          "coming-soon": false,
+          "chapters": [
+            {
+              "title": "Between",
+              "ref": "docs/content-modeling/field-validators/between:default",
+              "coming-soon": false
+            },
+            {
+              "title": "Integer",
+              "ref": "docs/content-modeling/field-validators/integer:default",
+              "coming-soon": false
+            },
+            {
+              "title": "Required",
+              "ref": "docs/content-modeling/field-validators/required:default",
+              "coming-soon": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Content Management",
+      "topics": [
+        {
+          "title": "CLI",
+          "ref": "docs/content-management/cli:default",
+          "coming-soon": false,
+          "chapters": []
+        },
+        {
+          "title": "REST API",
+          "ref": "docs/content-management/rest:default",
+          "coming-soon": false,
+          "chapters": []
+        },
+        {
+          "title": "Manager UI",
+          "ref": "docs/content-management/manager-ui:default",
+          "coming-soon": false,
+          "chapters": []
+        },
+        {
+          "title": "Live Editor",
+          "ref": "",
+          "coming-soon": true,
+          "chapters": []
+        }
+      ]
+    },
+    {
+      "label": "Authentication",
+      "topics": [
+        {
+          "title": "Username & Password",
+          "ref": "docs/authentication/username-password:default",
+          "coming-soon": false,
+          "chapters": []
+        }
+      ]
+    },
+    {
+      "label": "Integrations",
+      "topics": [
+        {
+          "title": "Overview",
+          "ref": "docs/integrations/overview:default",
+          "coming-soon": false,
+          "chapters": []
+        },
+        {
+          "title": "GitHub",
+          "ref": "docs/integrations/github:default",
+          "coming-soon": false,
+          "chapters": []
+        }
+      ]
+    },
+    {
+      "label": "Deployment",
+      "topics": [
+        {
+          "title": "Overview",
+          "ref": "docs/deployment/deployment-overview:default",
+          "coming-soon": false,
+          "chapters": []
+        },
+        {
+          "title": "Node",
+          "ref": "docs/deployment/node:default",
+          "coming-soon": false,
+          "chapters": []
+        },
+        {
+          "title": "Firebase",
+          "ref": "docs/deployment/firebase:default",
+          "coming-soon": false,
+          "chapters": []
+        },
+        {
+          "title": "AWS Lambda",
+          "coming-soon": true,
+          "chapters": []
+        },
+        {
+          "title": "Bun",
+          "ref": "",
+          "coming-soon": true,
+          "chapters": []
+        },
+        {
+          "title": "Vercel",
+          "ref": "",
+          "coming-soon": true,
+          "chapters": []
+        },
+        {
+          "title": "Browser",
+          "ref": "",
+          "coming-soon": true,
+          "chapters": []
+        }
+      ]
+    },
+    {
+      "label": "Development",
+      "topics": [
+        {
+          "title": "Architecture",
+          "ref": "",
+          "coming-soon": true,
+          "chapters": []
+        },
+        {
+          "title": "Modules",
+          "ref": "",
+          "coming-soon": true,
+          "chapters": []
+        },
+        {
+          "title": "Layers",
+          "ref": "",
+          "coming-soon": true,
+          "chapters": [
+            {
+              "title": "Admin Layer",
+              "ref": "",
+              "coming-soon": true
+            },
+            {
+              "title": "Bootstrap Layer",
+              "ref": "",
+              "coming-soon": true
+            },
+            {
+              "title": "Content Layer",
+              "ref": "",
+              "coming-soon": true
+            },
+            {
+              "title": "Delivery Layer",
+              "ref": "",
+              "coming-soon": true
+            },
+            {
+              "title": "Management Layer",
+              "ref": "",
+              "coming-soon": true
+            },
+            {
+              "title": "Persistence Layer",
+              "ref": "",
+              "coming-soon": true
+            },
+            {
+              "title": "Platform Layer",
+              "ref": "",
+              "coming-soon": true
+            },
+            {
+              "title": "Render Layer",
+              "ref": "",
+              "coming-soon": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
