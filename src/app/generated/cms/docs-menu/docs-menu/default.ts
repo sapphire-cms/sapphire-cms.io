@@ -3,7 +3,7 @@ import {DocsMenu} from "../docs-menu.types";
 export const docsMenu_default: DocsMenu = {
   "sections": [
     {
-      "label": "Getting Started-f",
+      "label": "Getting Started",
       "topics": [
         {
           "title": "Introduction",
