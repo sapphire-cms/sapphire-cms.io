@@ -11,10 +11,6 @@ export const layout_default: Layout = {
       "router-link": "/docs"
     },
     {
-      "label": "Sponsorship",
-      "router-link": "/sponsorship"
-    },
-    {
       "label": "Contact",
       "router-link": "/home",
       "fragment": "contact"
@@ -30,11 +26,6 @@ export const layout_default: Layout = {
       "label": "LinkedIn",
       "href": "https://www.linkedin.com/company/107213144",
       "icon": "fa-brands fa-linkedin"
-    },
-    {
-      "label": "Discord",
-      "href": "#",
-      "icon": "fa-brands fa-discord"
     }
   ]
 };
