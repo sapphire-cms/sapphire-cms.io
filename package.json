@@ -25,6 +25,7 @@
     "@sapphire-cms/node": "^0.2.1",
     "@sapphire-cms/rest": "^0.2.1",
     "@sapphire-cms/simple-auth": "^0.2.1",
+    "angular-google-tag-manager": "^1.13.0",
     "bulma": "^1.0.3",
     "clipboard": "^2.0.11",
     "express": "^4.18.2",

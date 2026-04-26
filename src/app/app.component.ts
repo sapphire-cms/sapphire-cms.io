@@ -1,14 +1,13 @@
-import {Component, Inject, OnInit} from '@angular/core';
+import {AfterViewInit, Component, Inject, OnInit} from '@angular/core';
 import {ActivatedRoute, NavigationEnd, Router, RouterOutlet} from '@angular/router';
-import {ContactFormComponent} from './contact-form/contact-form.component';
 import {NavbarComponent} from './navbar/navbar.component';
 import {FooterComponent} from './footer/footer.component';
-import {MainHeroComponent} from './main-hero/main-hero.component';
 import {Meta} from '@angular/platform-browser';
 import {DOCUMENT} from '@angular/common';
 import {filter, map} from 'rxjs';
 import layout_default from './generated/cms/layout/layout';
 import {MarkdownService} from 'ngx-markdown';
+import {GoogleTagManagerService} from 'angular-google-tag-manager';
 import {ScreenTrackingService} from '@angular/fire/analytics';
 
 const canonicalPrefix = 'https://sapphire-cms.io';
@@ -16,12 +15,12 @@ const canonicalPrefix = 'https://sapphire-cms.io';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ContactFormComponent, NavbarComponent, FooterComponent, MainHeroComponent],
+  imports: [RouterOutlet, NavbarComponent, FooterComponent],
   providers: [ScreenTrackingService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit {
   public readonly layout = layout_default;
 
   constructor(private readonly markdownService: MarkdownService,
@@ -29,6 +28,7 @@ export class AppComponent implements OnInit {
               private readonly activatedRoute: ActivatedRoute,
               private readonly meta: Meta,
               private readonly trackingService: ScreenTrackingService,
+              private readonly gtmService: GoogleTagManagerService,
               @Inject(DOCUMENT) private readonly document: Document) {
     this.router.events
       .pipe(
@@ -65,6 +65,10 @@ export class AppComponent implements OnInit {
         </div>
       </article>`;
     };
+  }
+
+  ngAfterViewInit() {
+    this.gtmService.addGtmToDom();
   }
 
   public scrollToTop() {

@@ -34,5 +34,9 @@ export const appConfig: ApplicationConfig = {
       }
       return functions;
     }),
+    {
+      provide: 'googleTagManagerId',
+      useValue: environment.gtmTag,
+    },
   ]
 };

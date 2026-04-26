@@ -1,5 +1,6 @@
 export const environment = {
   production: true,
+  gtmTag: 'GTM-MDHXJJWT',
   managerUiUrl: 'https://sapphire-cms-io-cms.web.app/manager-ui/',
 
   firebaseConfig: {
