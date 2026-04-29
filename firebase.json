@@ -40,7 +40,7 @@
     },
     {
       "target": "cms",
-      "public": "node_modules/@sapphire-cms/manager-ui/dist/sapphire-manager-ui/browser",
+      "public": "dist/sapphire",
       "rewrites": [
         {
           "source": "/manager-ui/**",

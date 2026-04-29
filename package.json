@@ -66,6 +66,7 @@
     "test": "ng test",
     "serve:ssr:sapphire-cms.io": "node dist/sapphire-cms.io/server/server.mjs",
     "sitemap:gen": "tsx src/sitemap.ts",
+    "copy:manager-ui": "cpy \"node_modules/@sapphire-cms/manager-ui/dist/sapphire-manager-ui/browser/**\" dist/sapphire/manager-ui --cwd=.",
     "cms:start": "sapphire-node"
   }
 }
