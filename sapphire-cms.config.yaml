@@ -29,9 +29,15 @@ config:
       config:
         dist: sapphire-functions/lib
 
+    - module: firebase
+      config:
+#        emulator-host: 127.0.0.1:8080
+        database-id: sapphire-cms
+
 layers:
   bootstrap: "@node"
-  persistence: "@github"
+  persistence: "@firebase"
+  backup: "@github"
   admin: "@rest"
   management: "@rest"
   platform: "@firebase"
