@@ -29,6 +29,7 @@ import github_default from './generated/cms/docs/integrations/github';
 import deploymentOverview_default from './generated/cms/docs/deployment/deployment-overview';
 import firebase_default from './generated/cms/docs/deployment/firebase';
 import usernamePassword_default from './generated/cms/docs/authentication/username-password';
+import cloudinary_default from "./generated/cms/docs/integrations/cloudinary";
 
 @Injectable({
   providedIn: 'root'
@@ -61,6 +62,7 @@ export class DocsService {
     'docs/authentication/username-password': usernamePassword_default,
     'docs/integrations/overview': overview_default,
     'docs/integrations/github': github_default,
+    'docs/integrations/cloudinary': cloudinary_default,
     'docs/deployment/deployment-overview': deploymentOverview_default,
     'docs/deployment/node': node_default,
     'docs/deployment/firebase': firebase_default,
