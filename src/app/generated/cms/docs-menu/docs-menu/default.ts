@@ -183,6 +183,12 @@ export const docsMenu_default: DocsMenu = {
           "ref": "docs/integrations/github:default",
           "coming-soon": false,
           "chapters": []
+        },
+        {
+          "title": "Cloudinary",
+          "ref": "docs/integrations/cloudinary:default",
+          "coming-soon": true,
+          "chapters": []
         }
       ]
     },
