@@ -102,6 +102,11 @@ export const docsMenu_default: DocsMenu = {
               "title": "Text",
               "ref": "docs/content-modeling/field-types/text:default",
               "coming-soon": false
+            },
+            {
+              "title": "Media",
+              "ref": "",
+              "coming-soon": true
             }
           ]
         },
