@@ -30,6 +30,7 @@ import deploymentOverview_default from './generated/cms/docs/deployment/deployme
 import firebase_default from './generated/cms/docs/deployment/firebase';
 import usernamePassword_default from './generated/cms/docs/authentication/username-password';
 import cloudinary_default from "./generated/cms/docs/integrations/cloudinary";
+import media_default from "./generated/cms/docs/content-modeling/field-types/media";
 
 @Injectable({
   providedIn: 'root'
@@ -52,6 +53,7 @@ export class DocsService {
     'docs/content-modeling/field-types/rich-text': richText_default,
     'docs/content-modeling/field-types/tag': tag_default,
     'docs/content-modeling/field-types/text': text_default,
+    'docs/content-modeling/field-types/media': media_default,
     'docs/content-modeling/field-validators': fieldValidators_default,
     'docs/content-modeling/field-validators/between': between_default,
     'docs/content-modeling/field-validators/integer': integer_default,
