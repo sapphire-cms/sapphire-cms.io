@@ -1,1 +1,1 @@
-export {searchEngine_default as default} from "./default";
+export { searchEngine_default as default } from "./default";

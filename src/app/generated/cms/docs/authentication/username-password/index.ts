@@ -1,1 +1,1 @@
-export {usernamePassword_default as default} from "./default";
+export { usernamePassword_default as default } from "./default";

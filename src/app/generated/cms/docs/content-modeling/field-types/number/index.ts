@@ -1,1 +1,1 @@
-export {number_default as default} from "./default";
+export { number_default as default } from "./default";

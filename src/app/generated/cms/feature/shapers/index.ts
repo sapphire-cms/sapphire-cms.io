@@ -1,1 +1,1 @@
-export {shapers_default as default} from "./default";
+export { shapers_default as default } from "./default";

@@ -1,31 +1,3 @@
-import {Layout} from "../layout.types";
+import { Layout } from "../layout.types";
 
-export const layout_default: Layout = {
-  "links": [
-    {
-      "label": "Home",
-      "router-link": "/home"
-    },
-    {
-      "label": "Docs",
-      "router-link": "/docs"
-    },
-    {
-      "label": "Contact",
-      "router-link": "/home",
-      "fragment": "contact"
-    }
-  ],
-  "socials": [
-    {
-      "label": "GitHub",
-      "href": "https://github.com/sapphire-cms/sapphire-cms",
-      "icon": "fa-brands fa-github"
-    },
-    {
-      "label": "LinkedIn",
-      "href": "https://www.linkedin.com/company/107213144",
-      "icon": "fa-brands fa-linkedin"
-    }
-  ]
-};
+export const layout_default: Layout = {"links":[{"label":"Home","router-link":"/home"},{"label":"Docs","router-link":"/docs"},{"label":"Contact","router-link":"/home","fragment":"contact"}],"socials":[{"label":"GitHub","href":"https://github.com/sapphire-cms/sapphire-cms","icon":"fa-brands fa-github"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/107213144","icon":"fa-brands fa-linkedin"}]};

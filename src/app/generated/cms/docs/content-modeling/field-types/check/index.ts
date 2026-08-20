@@ -1,1 +1,1 @@
-export {check_default as default} from "./default";
+export { check_default as default } from "./default";

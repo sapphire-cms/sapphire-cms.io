@@ -1,1 +1,1 @@
-export {tag_default as default} from "./default";
+export { tag_default as default } from "./default";

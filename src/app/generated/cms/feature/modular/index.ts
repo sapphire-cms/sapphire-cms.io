@@ -1,1 +1,1 @@
-export {modular_default as default} from "./default";
+export { modular_default as default } from "./default";

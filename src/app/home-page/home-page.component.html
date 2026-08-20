@@ -8,29 +8,29 @@
 
     <div class="columns is-centered">
       <div class="column is-one-third">
-        <app-argument [argument]="arguments.environmentAgnostic"></app-argument>
+        <app-argument [argument]="argument['environment-agnostic'].default"></app-argument>
       </div>
 
       <div class="column is-one-third">
-        <app-argument [argument]="arguments.trulyHeadless"></app-argument>
+        <app-argument [argument]="argument['truly-headless'].default"></app-argument>
       </div>
 
       <div class="column is-one-third">
-        <app-argument [argument]="arguments.modularHackable"></app-argument>
+        <app-argument [argument]="argument['modular-hackable'].default"></app-argument>
       </div>
     </div>
 
     <div class="columns is-centered">
       <div class="column is-one-third">
-        <app-argument [argument]="arguments.lowCode"></app-argument>
+        <app-argument [argument]="argument['low-code'].default"></app-argument>
       </div>
 
       <div class="column is-one-third">
-        <app-argument [argument]="arguments.futureFirstFeatures"></app-argument>
+        <app-argument [argument]="argument['future-first-features'].default"></app-argument>
       </div>
 
       <div class="column is-one-third">
-        <app-argument [argument]="arguments.loved"></app-argument>
+        <app-argument [argument]="argument['loved'].default"></app-argument>
       </div>
     </div>
   </div>
@@ -44,35 +44,35 @@
 
     <div class="columns is-centered">
       <div class="column is-one-third">
-        <app-cms-feature [feature]="features.modular"></app-cms-feature>
+        <app-cms-feature [feature]="feature['modular'].default"></app-cms-feature>
       </div>
 
       <div class="column is-one-third">
-        <app-cms-feature [feature]="features.serverless"></app-cms-feature>
+        <app-cms-feature [feature]="feature['serverless'].default"></app-cms-feature>
       </div>
 
       <div class="column is-one-third">
-        <app-cms-feature [feature]="features.headless"></app-cms-feature>
-      </div>
-    </div>
-
-    <div class="columns is-centered">
-      <div class="column is-one-third">
-        <app-cms-feature [feature]="features.fast"></app-cms-feature>
-      </div>
-
-      <div class="column is-one-third">
-        <app-cms-feature [feature]="features.shapers"></app-cms-feature>
-      </div>
-
-      <div class="column is-one-third">
-        <app-cms-feature [feature]="features.visualEditing"></app-cms-feature>
+        <app-cms-feature [feature]="feature['headless'].default"></app-cms-feature>
       </div>
     </div>
 
     <div class="columns is-centered">
       <div class="column is-one-third">
-        <app-cms-feature [feature]="features.searchEngine"></app-cms-feature>
+        <app-cms-feature [feature]="feature['fast'].default"></app-cms-feature>
+      </div>
+
+      <div class="column is-one-third">
+        <app-cms-feature [feature]="feature['shapers'].default"></app-cms-feature>
+      </div>
+
+      <div class="column is-one-third">
+        <app-cms-feature [feature]="feature['visual-editing'].default"></app-cms-feature>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column is-one-third">
+        <app-cms-feature [feature]="feature['search-engine'].default"></app-cms-feature>
       </div>
     </div>
   </div>

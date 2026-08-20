@@ -1,1 +1,1 @@
-export {diamond_default as default} from "./default";
+export { diamond_default as default } from "./default";

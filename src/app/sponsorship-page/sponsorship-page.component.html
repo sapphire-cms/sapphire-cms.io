@@ -31,7 +31,7 @@
     <div class="columns">
       <div class="column">
         <div class="box has-background-warning-95">
-          <app-sponsor-tier-snippet [sponsorTier]="quartzTier"
+          <app-sponsor-tier-snippet [sponsorTier]="sponsorTier['quartz'].default"
                                     [imgHeight]="50"
                                     titleClass="has-text-warning-30">
           </app-sponsor-tier-snippet>
@@ -48,7 +48,7 @@
 
       <div class="column">
         <div class="box has-background-link-95">
-          <app-sponsor-tier-snippet [sponsorTier]="amethystTier"
+          <app-sponsor-tier-snippet [sponsorTier]="sponsorTier['amethyst'].default"
                                     [imgHeight]="50"
                                     titleClass="has-text-link-60" >
           </app-sponsor-tier-snippet>
@@ -82,7 +82,7 @@
     <div class="columns">
       <div class="column">
         <div class="box has-background-danger-95">
-          <app-sponsor-tier-snippet [sponsorTier]="rubyTier"
+          <app-sponsor-tier-snippet [sponsorTier]="sponsorTier['ruby'].default"
                                     [imgHeight]="75"
                                     titleClass="has-text-danger-30" >
           </app-sponsor-tier-snippet>
@@ -99,7 +99,7 @@
 
       <div class="column">
         <div class="box has-background-info-95">
-          <app-sponsor-tier-snippet [sponsorTier]="diamondTier"
+          <app-sponsor-tier-snippet [sponsorTier]="sponsorTier['diamond'].default"
                                     [imgHeight]="75"
                                     titleClass="has-text-info-60" >
           </app-sponsor-tier-snippet>
@@ -127,15 +127,15 @@
                  alt="Representation of obsidian cristal.">
           </figure>
 
-          <h5 class="title is-5 has-text-white has-text-centered">{{ obsidianTier.tier }}</h5>
+          <h5 class="title is-5 has-text-white has-text-centered">{{ sponsorTier['obsidian'].default.tier }}</h5>
           <h6 class="subtitle is-6 has-text-grey-light is-italic has-text-centered">(Exclusive Tier – Only 10 Spots Available)</h6>
           <h6 class="subtitle is-6 has-text-centered has-text-grey-lighter">
             <span>Donation: </span>
-            <span class="is-family-monospace is-size-5">${{ obsidianTier.donation }}+</span>
+            <span class="is-family-monospace is-size-5">${{ sponsorTier['obsidian'].default.donation }}+</span>
           </h6>
 
           <h6 class="title is-6 has-text-centered mt-3 has-text-grey-lighter">For whom:</h6>
-          <h6 class="subtitle is-6 has-text-centered is-italic has-text-white">{{ obsidianTier['for-whom']?.join(', ') }}</h6>
+          <h6 class="subtitle is-6 has-text-centered is-italic has-text-white">{{ sponsorTier['obsidian'].default['for-whom']?.join(', ') }}</h6>
 
           <div class="has-text-centered">
             <a class="button is-light is-outlined"
@@ -154,7 +154,7 @@
          class="hero is-fullheight has-background-warning-95">
   <div class="hero-body layout-wrapper">
     <div>
-      <app-sponsor-tier-presentation [sponsorTier]="quartzTier"
+      <app-sponsor-tier-presentation [sponsorTier]="sponsorTier['quartz'].default"
                                      highlightClass="has-text-warning-30">
       </app-sponsor-tier-presentation>
     </div>
@@ -165,7 +165,7 @@
          class="hero is-fullheight has-background-link-95">
   <div class="hero-body layout-wrapper">
     <div>
-      <app-sponsor-tier-presentation [sponsorTier]="amethystTier"
+      <app-sponsor-tier-presentation [sponsorTier]="sponsorTier['amethyst'].default"
                                      highlightClass="has-text-link-60">
       </app-sponsor-tier-presentation>
     </div>
@@ -176,7 +176,7 @@
          class="hero is-fullheight has-background-danger-95">
   <div class="hero-body layout-wrapper">
     <div>
-      <app-sponsor-tier-presentation [sponsorTier]="rubyTier"
+      <app-sponsor-tier-presentation [sponsorTier]="sponsorTier['ruby'].default"
                                      highlightClass="has-text-danger-30">
       </app-sponsor-tier-presentation>
     </div>
@@ -187,7 +187,7 @@
          class="hero is-fullheight has-background-info-95">
   <div class="hero-body layout-wrapper">
     <div>
-      <app-sponsor-tier-presentation [sponsorTier]="diamondTier"
+      <app-sponsor-tier-presentation [sponsorTier]="sponsorTier['diamond'].default"
                                      highlightClass="has-text-info-60">
       </app-sponsor-tier-presentation>
     </div>
@@ -198,7 +198,7 @@
          class="hero is-fullheight has-background-dark">
   <div class="hero-body layout-wrapper">
     <div>
-      <app-sponsor-tier-presentation [sponsorTier]="obsidianTier"
+      <app-sponsor-tier-presentation [sponsorTier]="sponsorTier['obsidian'].default"
                                      contentClass="has-text-white"
                                      highlightClass="has-text-white">
       </app-sponsor-tier-presentation>

@@ -1,1 +1,1 @@
-export {aot_default as default} from "./default";
+export { aot_default as default } from "./default";

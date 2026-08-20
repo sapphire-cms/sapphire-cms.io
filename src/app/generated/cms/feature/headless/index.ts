@@ -1,1 +1,1 @@
-export {headless_default as default} from "./default";
+export { headless_default as default } from "./default";

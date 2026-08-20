@@ -1,1 +1,1 @@
-export {group_default as default} from "./default";
+export { group_default as default } from "./default";

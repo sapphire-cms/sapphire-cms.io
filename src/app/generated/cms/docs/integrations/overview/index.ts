@@ -1,1 +1,1 @@
-export {overview_default as default} from "./default";
+export { overview_default as default } from "./default";

@@ -1,1 +1,1 @@
-export {installation_default as default} from "./default";
+export { installation_default as default } from "./default";

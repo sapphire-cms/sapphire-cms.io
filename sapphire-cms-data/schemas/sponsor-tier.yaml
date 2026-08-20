@@ -19,6 +19,7 @@ fields:
     label: Is Tier Available
     type: check
     required: true
+    index: true
 
   - name: category
     label: Sponsor Tier Category
@@ -29,12 +30,14 @@ fields:
           - sponsor
           - partner
           - founding partner
+    index: true
 
   - name: donation
     label: Donation Amount
     description: Required donation amount in USD.
     type: number
     required: true
+    index: true
 
   - name: for-whom
     label: Preferred Targets

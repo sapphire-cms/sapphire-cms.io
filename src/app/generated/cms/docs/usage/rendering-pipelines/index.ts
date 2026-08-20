@@ -1,1 +1,1 @@
-export {renderingPipelines_default as default} from "./default";
+export { renderingPipelines_default as default } from "./default";

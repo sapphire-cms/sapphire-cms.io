@@ -5,7 +5,7 @@ import {filter} from 'rxjs';
 import introduction_default from '../generated/cms/docs/getting-started/introduction';
 import {Docs} from '../generated/cms/docs/docs.types';
 import {MarkdownComponent} from 'ngx-markdown';
-import {DocsService} from '../docs.service';
+import {docs} from "../generated/cms/docs";
 
 @Component({
   selector: 'app-docs',
@@ -22,13 +22,14 @@ export class DocsComponent {
   public doc: Docs = introduction_default;
 
   public isMenuVisible = false;
+  protected readonly filter = filter;
 
-  constructor(private readonly router: Router,
-              private readonly docsService: DocsService) {
+  constructor(private readonly router: Router) {
     this.router.events
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe(event => {
-        this.doc = this.docsService.pages[this.router.url.slice(1)];
+        const slug = this.router.url.slice(1);
+        this.doc = this.locateDocument(slug);
       });
   }
 
@@ -45,10 +46,19 @@ export class DocsComponent {
   }
 
   refToTitle(ref: string): string {
-    console.log(ref);
-
-    return this.docsService.refToTitle(ref.split(':')[0]);
+    const slug = ref.split(':')[0]
+    const doc = this.locateDocument(slug);
+    return doc.title;
   }
 
-  protected readonly filter = filter;
+  private locateDocument(slug: string): Docs {
+    const [, ...path] = slug.split('/');
+
+    const result = path.reduce(
+      (current, key) => current?.[key],
+      docs as any,
+    );
+
+    return result.default;
+  }
 }

@@ -36,9 +36,10 @@ config:
 
 layers:
   bootstrap: "@node"
-  persistence: "@firebase"
+  persistence: "@node"
   backup: "@github"
   admin: "@rest"
   management: "@rest"
-  platform: "@firebase"
+  platform: "@node"
   security: "@simple-auth"
+  public: "@rest"

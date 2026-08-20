@@ -1,1 +1,1 @@
-export {futureFirstFeatures_default as default} from "./default";
+export { futureFirstFeatures_default as default } from "./default";

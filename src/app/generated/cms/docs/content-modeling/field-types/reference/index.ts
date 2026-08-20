@@ -1,1 +1,1 @@
-export {reference_default as default} from "./default";
+export { reference_default as default } from "./default";

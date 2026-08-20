@@ -1,1 +1,1 @@
-export {environmentAgnostic_default as default} from "./default";
+export { environmentAgnostic_default as default } from "./default";
