@@ -9,6 +9,7 @@ import group_default from "./content-modeling/field-types/group";
 import media_default from "./content-modeling/field-types/media";
 import number_default from "./content-modeling/field-types/number";
 import reference_default from "./content-modeling/field-types/reference";
+import richText_default from "./content-modeling/field-types/rich-text";
 
 export * from "./integrations/cloudinary";
 export * from "./authentication/username-password";
@@ -21,6 +22,7 @@ export * from "./content-modeling/field-types/group";
 export * from "./content-modeling/field-types/media";
 export * from "./content-modeling/field-types/number";
 export * from "./content-modeling/field-types/reference";
+export * from "./content-modeling/field-types/rich-text";
 
 export const docs = {
         "integrations": {
@@ -61,6 +63,9 @@ export const docs = {
                 },
                 "reference": {
                     "default": reference_default,
+                },
+                "rich-text": {
+                    "default": richText_default,
                 },
             },
         },
