@@ -1,1 +1,1 @@
-export {github_default as default} from "./default";
+export { github_default as default } from "./default";

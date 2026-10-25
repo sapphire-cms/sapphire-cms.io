@@ -1,1 +1,1 @@
-export {coreConcepts_default as default} from "./default";
+export { coreConcepts_default as default } from "./default";

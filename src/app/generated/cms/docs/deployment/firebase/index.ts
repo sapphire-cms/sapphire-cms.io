@@ -1,1 +1,1 @@
-export {firebase_default as default} from "./default";
+export { firebase_default as default } from "./default";

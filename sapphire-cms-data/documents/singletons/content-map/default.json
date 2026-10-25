@@ -1,0 +1,1 @@
+{"id":"content-map","store":"content-map","path":[],"type":"singleton","variant":"default","status":"PUBLISHED","createdAt":"2026-10-25T12:52:04.717Z","lastModifiedAt":"2026-10-25T13:01:16.163Z","createdBy":"node@0.3.0","content":{"version":"0.3.0","stores":["content-map-stores/docs-menu:default","content-map-stores/docs:default"]}}
