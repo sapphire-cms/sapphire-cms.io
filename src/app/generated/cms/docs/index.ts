@@ -18,6 +18,7 @@ import required_default from "./content-modeling/field-validators/required";
 import deploymentOverview_default from "./deployment/deployment-overview";
 import firebase_default from "./deployment/firebase";
 import node_default from "./deployment/node";
+import coreConcepts_default from "./getting-started/core-concepts";
 
 export * from "./integrations/cloudinary";
 export * from "./authentication/username-password";
@@ -39,6 +40,7 @@ export * from "./content-modeling/field-validators/required";
 export * from "./deployment/deployment-overview";
 export * from "./deployment/firebase";
 export * from "./deployment/node";
+export * from "./getting-started/core-concepts";
 
 export const docs = {
         "integrations": {
@@ -109,6 +111,11 @@ export const docs = {
             },
             "node": {
                 "default": node_default,
+            },
+        },
+        "getting-started": {
+            "core-concepts": {
+                "default": coreConcepts_default,
             },
         },
     } as const;
