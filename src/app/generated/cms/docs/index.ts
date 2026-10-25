@@ -13,6 +13,7 @@ import richText_default from "./content-modeling/field-types/rich-text";
 import tag_default from "./content-modeling/field-types/tag";
 import fieldValidators_default from "./content-modeling/field-validators";
 import between_default from "./content-modeling/field-validators/between";
+import integer_default from "./content-modeling/field-validators/integer";
 
 export * from "./integrations/cloudinary";
 export * from "./authentication/username-password";
@@ -29,6 +30,7 @@ export * from "./content-modeling/field-types/rich-text";
 export * from "./content-modeling/field-types/tag";
 export * from "./content-modeling/field-validators";
 export * from "./content-modeling/field-validators/between";
+export * from "./content-modeling/field-validators/integer";
 
 export const docs = {
         "integrations": {
@@ -81,6 +83,9 @@ export const docs = {
                 "default": fieldValidators_default,
                 "between": {
                     "default": between_default,
+                },
+                "integer": {
+                    "default": integer_default,
                 },
             },
         },
