@@ -17,6 +17,7 @@ import integer_default from "./content-modeling/field-validators/integer";
 import required_default from "./content-modeling/field-validators/required";
 import deploymentOverview_default from "./deployment/deployment-overview";
 import firebase_default from "./deployment/firebase";
+import node_default from "./deployment/node";
 
 export * from "./integrations/cloudinary";
 export * from "./authentication/username-password";
@@ -37,6 +38,7 @@ export * from "./content-modeling/field-validators/integer";
 export * from "./content-modeling/field-validators/required";
 export * from "./deployment/deployment-overview";
 export * from "./deployment/firebase";
+export * from "./deployment/node";
 
 export const docs = {
         "integrations": {
@@ -104,6 +106,9 @@ export const docs = {
             },
             "firebase": {
                 "default": firebase_default,
+            },
+            "node": {
+                "default": node_default,
             },
         },
     } as const;
