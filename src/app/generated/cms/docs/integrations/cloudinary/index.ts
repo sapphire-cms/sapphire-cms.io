@@ -1,1 +1,1 @@
-export {cloudinary_default as default} from "./default";
+export { cloudinary_default as default } from "./default";
