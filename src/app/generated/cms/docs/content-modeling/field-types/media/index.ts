@@ -1,1 +1,1 @@
-export {media_default as default} from "./default";
+export { media_default as default } from "./default";

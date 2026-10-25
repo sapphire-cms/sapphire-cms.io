@@ -6,6 +6,7 @@ import rest_default from "./content-management/rest";
 import fieldTypes_default from "./content-modeling/field-types";
 import check_default from "./content-modeling/field-types/check";
 import group_default from "./content-modeling/field-types/group";
+import media_default from "./content-modeling/field-types/media";
 
 export * from "./integrations/cloudinary";
 export * from "./authentication/username-password";
@@ -15,6 +16,7 @@ export * from "./content-management/rest";
 export * from "./content-modeling/field-types";
 export * from "./content-modeling/field-types/check";
 export * from "./content-modeling/field-types/group";
+export * from "./content-modeling/field-types/media";
 
 export const docs = {
         "integrations": {
@@ -46,6 +48,9 @@ export const docs = {
                 },
                 "group": {
                     "default": group_default,
+                },
+                "media": {
+                    "default": media_default,
                 },
             },
         },
