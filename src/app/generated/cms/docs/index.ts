@@ -21,6 +21,7 @@ import node_default from "./deployment/node";
 import coreConcepts_default from "./getting-started/core-concepts";
 import installation_default from "./getting-started/installation";
 import introduction_default from "./getting-started/introduction";
+import github_default from "./integrations/github";
 
 export * from "./integrations/cloudinary";
 export * from "./authentication/username-password";
@@ -45,11 +46,15 @@ export * from "./deployment/node";
 export * from "./getting-started/core-concepts";
 export * from "./getting-started/installation";
 export * from "./getting-started/introduction";
+export * from "./integrations/github";
 
 export const docs = {
         "integrations": {
             "cloudinary": {
                 "default": cloudinary_default,
+            },
+            "github": {
+                "default": github_default,
             },
         },
         "authentication": {
