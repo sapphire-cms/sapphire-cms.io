@@ -3,12 +3,14 @@ import usernamePassword_default from "./authentication/username-password";
 import cli_default from "./content-management/cli";
 import managerUi_default from "./content-management/manager-ui";
 import rest_default from "./content-management/rest";
+import fieldTypes_default from "./content-modeling/field-types";
 
 export * from "./integrations/cloudinary";
 export * from "./authentication/username-password";
 export * from "./content-management/cli";
 export * from "./content-management/manager-ui";
 export * from "./content-management/rest";
+export * from "./content-modeling/field-types";
 
 export const docs = {
         "integrations": {
@@ -30,6 +32,11 @@ export const docs = {
             },
             "rest": {
                 "default": rest_default,
+            },
+        },
+        "content-modeling": {
+            "field-types": {
+                "default": fieldTypes_default,
             },
         },
     } as const;
