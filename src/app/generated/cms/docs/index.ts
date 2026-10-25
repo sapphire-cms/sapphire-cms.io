@@ -19,6 +19,7 @@ import deploymentOverview_default from "./deployment/deployment-overview";
 import firebase_default from "./deployment/firebase";
 import node_default from "./deployment/node";
 import coreConcepts_default from "./getting-started/core-concepts";
+import installation_default from "./getting-started/installation";
 
 export * from "./integrations/cloudinary";
 export * from "./authentication/username-password";
@@ -41,6 +42,7 @@ export * from "./deployment/deployment-overview";
 export * from "./deployment/firebase";
 export * from "./deployment/node";
 export * from "./getting-started/core-concepts";
+export * from "./getting-started/installation";
 
 export const docs = {
         "integrations": {
@@ -116,6 +118,9 @@ export const docs = {
         "getting-started": {
             "core-concepts": {
                 "default": coreConcepts_default,
+            },
+            "installation": {
+                "default": installation_default,
             },
         },
     } as const;
