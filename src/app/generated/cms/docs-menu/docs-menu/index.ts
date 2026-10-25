@@ -1,1 +1,1 @@
-export {docsMenu_default as default} from "./default";
+export { docsMenu_default as default } from "./default";
