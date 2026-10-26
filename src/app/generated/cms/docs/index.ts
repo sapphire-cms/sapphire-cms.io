@@ -28,6 +28,7 @@ import cmsConfig_default from "./usage/cms-config";
 import documentShapers_default from "./usage/document-shapers";
 import renderingPipelines_default from "./usage/rendering-pipelines";
 import contentSchemas_default from "./usage/content-schemas";
+import text_default from "./content-modeling/field-types/text";
 
 export * from "./integrations/cloudinary";
 export * from "./authentication/username-password";
@@ -59,6 +60,7 @@ export * from "./usage/cms-config";
 export * from "./usage/document-shapers";
 export * from "./usage/rendering-pipelines";
 export * from "./usage/content-schemas";
+export * from "./content-modeling/field-types/text";
 
 export const docs = {
         "integrations": {
@@ -111,6 +113,9 @@ export const docs = {
                 },
                 "tag": {
                     "default": tag_default,
+                },
+                "text": {
+                    "default": text_default,
                 },
             },
             "field-validators": {
