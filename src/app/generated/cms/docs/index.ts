@@ -26,6 +26,7 @@ import overview_default from "./integrations/overview";
 import aot_default from "./usage/aot";
 import cmsConfig_default from "./usage/cms-config";
 import documentShapers_default from "./usage/document-shapers";
+import renderingPipelines_default from "./usage/rendering-pipelines";
 
 export * from "./integrations/cloudinary";
 export * from "./authentication/username-password";
@@ -55,6 +56,7 @@ export * from "./integrations/overview";
 export * from "./usage/aot";
 export * from "./usage/cms-config";
 export * from "./usage/document-shapers";
+export * from "./usage/rendering-pipelines";
 
 export const docs = {
         "integrations": {
@@ -153,6 +155,9 @@ export const docs = {
             },
             "document-shapers": {
                 "default": documentShapers_default,
+            },
+            "rendering-pipelines": {
+                "default": renderingPipelines_default,
             },
         },
     } as const;
