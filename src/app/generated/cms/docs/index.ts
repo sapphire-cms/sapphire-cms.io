@@ -22,6 +22,7 @@ import coreConcepts_default from "./getting-started/core-concepts";
 import installation_default from "./getting-started/installation";
 import introduction_default from "./getting-started/introduction";
 import github_default from "./integrations/github";
+import overview_default from "./integrations/overview";
 
 export * from "./integrations/cloudinary";
 export * from "./authentication/username-password";
@@ -47,6 +48,7 @@ export * from "./getting-started/core-concepts";
 export * from "./getting-started/installation";
 export * from "./getting-started/introduction";
 export * from "./integrations/github";
+export * from "./integrations/overview";
 
 export const docs = {
         "integrations": {
@@ -55,6 +57,9 @@ export const docs = {
             },
             "github": {
                 "default": github_default,
+            },
+            "overview": {
+                "default": overview_default,
             },
         },
         "authentication": {
