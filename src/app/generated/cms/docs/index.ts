@@ -23,6 +23,7 @@ import installation_default from "./getting-started/installation";
 import introduction_default from "./getting-started/introduction";
 import github_default from "./integrations/github";
 import overview_default from "./integrations/overview";
+import aot_default from "./usage/aot";
 
 export * from "./integrations/cloudinary";
 export * from "./authentication/username-password";
@@ -49,6 +50,7 @@ export * from "./getting-started/installation";
 export * from "./getting-started/introduction";
 export * from "./integrations/github";
 export * from "./integrations/overview";
+export * from "./usage/aot";
 
 export const docs = {
         "integrations": {
@@ -136,6 +138,11 @@ export const docs = {
             },
             "introduction": {
                 "default": introduction_default,
+            },
+        },
+        "usage": {
+            "aot": {
+                "default": aot_default,
             },
         },
     } as const;
