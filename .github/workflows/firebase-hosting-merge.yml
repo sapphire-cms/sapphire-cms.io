@@ -19,7 +19,7 @@ jobs:
           node-version: ${{ env.node_version }}
           cache: 'npm'
 
-      - run: node --version && npm --version && npm ci && npm run build
+      - run: npm ci && npm run build
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
