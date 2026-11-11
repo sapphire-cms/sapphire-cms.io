@@ -1,0 +1,23 @@
+profile: prod
+extends: ./sapphire-cms.config.base.yaml
+config:
+  debug: true
+  modules:
+    - module: simple-auth
+      config:
+        username: ${env.SAPPHIRE_USERNAME}
+        password: ${env.SAPPHIRE_PASSWORD}
+
+    - module: aot
+      config:
+        dist: sapphire-functions/lib
+
+    - module: firebase
+      config:
+        #        emulator-host: 127.0.0.1:8080
+        database-id: sapphire-cms
+
+layers:
+  persistence: "@firebase"
+  platform: "@firebase"
+  security: "@simple-auth"

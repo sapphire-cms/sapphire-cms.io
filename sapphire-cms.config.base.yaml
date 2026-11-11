@@ -1,0 +1,34 @@
+config:
+  debug: true
+  modules:
+    - module: cli
+      config:
+        editor: gedit
+
+    - module: node
+      config:
+        data-dir: ./sapphire-cms-data
+        output-dir: ./src/app/generated/cms
+
+    - module: github
+      config:
+        owner: sapphire-cms
+        repo: sapphire-cms.io
+        data-branch: master
+        data-dir: sapphire-cms-data
+        output-branch: master
+        output-dir: src/app/generated/cms
+        personal-access-token: ${env.SAPPHIRE_IO_GITHUB_PERSONAL_ACCESS_TOKEN}
+
+    - module: cloudinary
+      config:
+        cloud-name: ${env.CLOUDINARY_CLOUD_NAME}
+        api-key: ${env.CLOUDINARY_API_KEY}
+        api-secret: ${env.CLOUDINARY_API_SECRET}
+
+layers:
+  bootstrap: "@node"
+  admin: "@rest"
+  management: "@rest"
+  public: "@rest"
+  media: "@cloudinary"
