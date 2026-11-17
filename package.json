@@ -60,13 +60,13 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:cms": "scms build",
     "link": "yalc link @sapphire-cms/core @sapphire-cms/node @sapphire-cms/cli @sapphire-cms/codegen @sapphire-cms/rest @sapphire-cms/manager-ui @sapphire-cms/github @sapphire-cms/aot @sapphire-cms/simple-auth @sapphire-cms/firebase @sapphire-cms/cloudinary",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:sapphire-cms.io": "node dist/sapphire-cms.io/server/server.mjs",
     "sitemap:gen": "tsx src/sitemap.ts",
     "copy:manager-ui": "cpy \"node_modules/@sapphire-cms/manager-ui/dist/sapphire-manager-ui/browser/**\" dist/sapphire/manager-ui --cwd=.",
-    "cms:start": "sapphire-node"
+    "cms:start": "scms start",
+    "cms:build": "scms build -P prod"
   }
 }
