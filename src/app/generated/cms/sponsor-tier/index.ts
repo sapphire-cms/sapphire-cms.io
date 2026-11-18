@@ -1,8 +1,10 @@
 import diamond_default from "./diamond";
 import amethyst_default from "./amethyst";
+import obsidian_default from "./obsidian";
 
 export * from "./diamond";
 export * from "./amethyst";
+export * from "./obsidian";
 
 export const sponsorTier = {
         "diamond": {
@@ -10,5 +12,8 @@ export const sponsorTier = {
         },
         "amethyst": {
             "default": amethyst_default,
+        },
+        "obsidian": {
+            "default": obsidian_default,
         },
     } as const;
