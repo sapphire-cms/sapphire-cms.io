@@ -38,6 +38,9 @@ fields:
     type: number
     required: true
     index: true
+    validation:
+      - integer
+      - positive
 
   - name: for-whom
     label: Preferred Targets
